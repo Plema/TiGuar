@@ -1,0 +1,203 @@
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+    .left_box{
+      order: 2;
+      position: relative;
+      background-color: #f7f7f7;
+      padding: 44px 0 0 0;
+      .container{
+        .logo{
+          width: 224px;
+          height: 50px;
+          display: block;
+          margin: 0 auto;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .contact{
+          margin: 41px auto 0;
+          padding: 0 30px 0 40px;
+          li{
+            a{
+              color: #171717;
+              font-family: "Gotham Pro";
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 12.48px;
+              position: relative;
+              padding: 8px 0 10px 49px;
+              display: block;
+              margin: 0 0 25px;
+              i{
+                position: absolute;
+                left: 0;
+                width: 29px;
+                height: 29px;
+                background-color: #db1515;
+                border-radius: 50%;
+                text-align: center;
+                top: 0;
+                &:before{
+                  color: #ffffff;
+                  font-size: 12px;
+                  line-height: 29px;
+                }
+              }
+            }
+          }
+        }
+        .nav{
+          display: flex;
+          justify-content: space-between;
+          padding: 17px 55px 40px 40px;
+          .soc{
+            display: flex;
+            justify-content: space-between;
+            width: 38%;
+            li{
+              .youtube{
+                width: 29px;
+                height: 21px;
+                background: url("../img/youtube.png");
+                background-repeat: no-repeat;
+                cursor: pointer;
+                transition: 0.5s;
+                display: block;
+                &:hover{
+                  background: url("../img/youtube_copy.png");
+                  background-repeat: no-repeat;
+                }
+              }
+              .inst{
+                width: 22px;
+                height: 21px;
+                background: url("../img/instagram.png");
+                background-repeat: no-repeat;
+                cursor: pointer;
+                transition: 0.5s;
+                display: block;
+                &:hover{
+                  background: url("../img/instagram_copy.png");
+                  background-repeat: no-repeat;
+                }
+              }
+            }
+          }
+          .lang{
+            display: flex;
+            justify-content: space-between;
+            li{
+              padding: 0 5px 0 5px;
+              a{
+                font-family: "Gotham Pro";
+                font-size: 14px;
+                line-height: 12.48px;
+                color: #383838;
+                font-weight: 400;
+                &:hover{
+                  color: #0660b3;
+                }
+              }
+              &.active{
+                a{
+                  color: #010101;
+                  font-weight: 700;
+                  &:hover{
+                    color: #0660b3;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .linc{
+          color: #696969;
+          font-family: "Gotham Pro";
+          font-size: 13px;
+          font-weight: 300;
+          text-decoration: underline;
+          text-align: center;
+          cursor: pointer;
+          display: block;
+        }
+        p{
+          color: #696969;
+          font-family: "Gotham Pro";
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 37px;
+          text-align: center;
+          margin: 25px auto 0;
+        }
+      }
+    }
+    .right_box{
+      order: 1;
+      background-color: #171717;
+      padding: 0 0 40px 0;
+    .container{
+     .title{
+       color: #ffffff;
+       font-family: "Gotham Pro";
+       font-size: 20px;
+       font-weight: 700;
+       padding: 6px 10px 30px 20px;
+       &:before{
+         top: 12px;
+       }
+     }
+      p{
+       color: #727272;
+       font-family: "Gotham Pro";
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 21px;
+       padding: 5px 8px 38px 21px;
+     }
+      form{
+       .input_box{
+         margin: 0 0 43px 0;
+         textarea{
+           width: 290px;
+           height: 103px;
+           border-radius: 34px;
+           border: 1px solid #727272;
+           background: none;
+           padding: 10px 20px 10px 20px;
+           color: #727272;
+           font-family: "Gotham Pro";
+           font-size: 13px;
+           font-weight: 400;
+         }
+         input{
+           color: #727272;
+           font-family: "Gotham Pro";
+           font-size: 13px;
+           font-weight: 400;
+           line-height: 12.48px;
+           padding: 10px 20px 10px 20px;
+         }
+       }
+       .about{
+         color: #ffffff;
+         font-family: "Gotham Pro";
+         font-size: 12px;
+         font-weight: 300;
+         padding: 41px 15px 0px 21px;
+         line-height: 15px;
+         a{
+           color: #0660b3;
+           text-decoration: underline;
+           font-family: "Gotham Pro";
+           font-size: 12px;
+           font-weight: 300;
+           display: block;
+         }
+       }
+     }
+   }
+  }
+}
