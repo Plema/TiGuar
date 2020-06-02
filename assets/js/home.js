@@ -15,7 +15,7 @@ $(document).ready(function(){
             },
             {
 
-                breakpoint: 1600,
+                breakpoint: 1400,
                 settings: {
                     centerMode:false,
                     slidesToShow: 3,
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 breakpoint: 1280,
                 settings: {
                     centerMode:false,
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
@@ -44,7 +44,7 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     centerMode:false,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             },
@@ -139,7 +139,7 @@ $(document).ready(function(){
     $('.partner_slider').slick({
         infinite: false,
         draggable:true,
-        slidesToShow: 1,
+        slidesToShow: 6,
         slidesToScroll: 1,
         vertical:true,
         speed:300,
@@ -154,12 +154,12 @@ $(document).ready(function(){
     $( function() {
         $( "#tabs" ).tabs();
     } );
-    $('#tab').change(function() {
-        value = $(this).find('option:selected').val();
-
-        $('div[id^="test_hide"]').hide();
-        $('#test_hide'+value).show();
-    });
+    //$('#tab').change(function() {
+    //    value = $(this).find('option:selected').val();
+    //
+    //    $('div[id^="test_hide"]').hide();
+    //    $('#test_hide'+value).show();
+    //});
     $(function () {
 
         var show = true;
@@ -173,7 +173,6 @@ $(document).ready(function(){
             var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
             if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
                 $('.benefits__number').css('opacity', '1');
-                $('.benefits__number').addClass('ac');
                 $('.benefits__number').spincrement({
                     thousandSeparator: "",
                     duration: 1200
@@ -205,15 +204,19 @@ $(document).ready(function(){
                 },
                 // when window width is <= 480px
                 480: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20
                 },
                 // when window width is <= 640px
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 30
                 },
                 1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                1600: {
                     slidesPerView: 5,
                     spaceBetween: 30
                 }
@@ -228,11 +231,40 @@ $(document).ready(function(){
     }).eq(0).addClass("active");
 
 
-    $(".tab_it").not(":first").hide();
-    $(".tabe").click(function() {
-        $(".tabe").removeClass("active").eq($(this).index()).addClass("active");
-        $(".tab_it").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
+
+    $('.partner_slider .slide').click(function(){
+
+        $('.slick-slide').addClass('h');
+        $('.slide').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.partner_slider .slick-slide').click(function(){
+        $('.slick-slide').removeClass('h');
+        $(this).addClass('h');
+    });
+    $(window).scroll(function(){
+        $('.mobile').toggleClass('fix', $(this).scrollTop() > 0);
+    });
+    $(".partners_filter .filter-open").on("click",function(){
+        $(this).next().addClass("active")
+    });
+    $("#pp_offers_list li").on("click",function(){
+            $("#pp_offers_list li").removeClass("active"),
+            $(this).addClass("active"),
+            $(this).parent("#pp_offers_list").removeClass("active"),
+            $(".filter-open").find("span b").text($(this).find("a").text())
+    });
+
+    $(".tabs-button a").click(function(e) {
+        $("div [data-id]").removeClass("active");
+        $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
+        e.preventDefault();
+    });
+
+
+
 
 
 });
+
+

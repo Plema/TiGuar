@@ -1,203 +1,393 @@
 .footer{
-  display: flex;
-  flex-wrap: wrap;
-    .left_box{
-      order: 2;
-      position: relative;
-      background-color: #f7f7f7;
-      padding: 44px 0 0 0;
-      .container{
-        .logo{
-          width: 224px;
-          height: 50px;
-          display: block;
-          margin: 0 auto;
-          img{
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .contact{
-          margin: 41px auto 0;
-          padding: 0 30px 0 40px;
-          li{
-            a{
-              color: #171717;
-              font-family: "Gotham Pro";
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 12.48px;
-              position: relative;
-              padding: 8px 0 10px 49px;
-              display: block;
-              margin: 0 0 25px;
-              i{
-                position: absolute;
-                left: 0;
-                width: 29px;
-                height: 29px;
-                background-color: #db1515;
-                border-radius: 50%;
-                text-align: center;
-                top: 0;
-                &:before{
-                  color: #ffffff;
-                  font-size: 12px;
-                  line-height: 29px;
-                }
-              }
-            }
-          }
-        }
-        .nav{
-          display: flex;
-          justify-content: space-between;
-          padding: 17px 55px 40px 40px;
-          .soc{
-            display: flex;
-            justify-content: space-between;
-            width: 38%;
-            li{
-              .youtube{
-                width: 29px;
-                height: 21px;
-                background: url("../img/youtube.png");
-                background-repeat: no-repeat;
-                cursor: pointer;
-                transition: 0.5s;
-                display: block;
-                &:hover{
-                  background: url("../img/youtube_copy.png");
-                  background-repeat: no-repeat;
-                }
-              }
-              .inst{
-                width: 22px;
-                height: 21px;
-                background: url("../img/instagram.png");
-                background-repeat: no-repeat;
-                cursor: pointer;
-                transition: 0.5s;
-                display: block;
-                &:hover{
-                  background: url("../img/instagram_copy.png");
-                  background-repeat: no-repeat;
-                }
-              }
-            }
-          }
-          .lang{
-            display: flex;
-            justify-content: space-between;
-            li{
-              padding: 0 5px 0 5px;
-              a{
-                font-family: "Gotham Pro";
-                font-size: 14px;
-                line-height: 12.48px;
-                color: #383838;
-                font-weight: 400;
-                &:hover{
-                  color: #0660b3;
-                }
-              }
-              &.active{
-                a{
-                  color: #010101;
-                  font-weight: 700;
-                  &:hover{
-                    color: #0660b3;
-                  }
-                }
-              }
-            }
-          }
-        }
-        .linc{
-          color: #696969;
-          font-family: "Gotham Pro";
-          font-size: 13px;
-          font-weight: 300;
-          text-decoration: underline;
-          text-align: center;
-          cursor: pointer;
-          display: block;
-        }
-        p{
-          color: #696969;
-          font-family: "Gotham Pro";
-          font-size: 13px;
-          font-weight: 400;
-          line-height: 37px;
-          text-align: center;
-          margin: 25px auto 0;
-        }
-      }
-    }
-    .right_box{
-      order: 1;
-      background-color: #171717;
-      padding: 0 0 40px 0;
-    .container{
-     .title{
-       color: #ffffff;
-       font-family: "Gotham Pro";
-       font-size: 20px;
-       font-weight: 700;
-       padding: 6px 10px 30px 20px;
-       &:before{
-         top: 12px;
-       }
-     }
-      p{
-       color: #727272;
-       font-family: "Gotham Pro";
-       font-size: 14px;
-       font-weight: 400;
-       line-height: 21px;
-       padding: 5px 8px 38px 21px;
-     }
-      form{
-       .input_box{
-         margin: 0 0 43px 0;
-         textarea{
-           width: 290px;
-           height: 103px;
-           border-radius: 34px;
-           border: 1px solid #727272;
-           background: none;
-           padding: 10px 20px 10px 20px;
-           color: #727272;
-           font-family: "Gotham Pro";
-           font-size: 13px;
-           font-weight: 400;
-         }
-         input{
-           color: #727272;
-           font-family: "Gotham Pro";
-           font-size: 13px;
-           font-weight: 400;
-           line-height: 12.48px;
-           padding: 10px 20px 10px 20px;
+  position: relative;
+  &:before{
+    content: '';
+    background-color: #f7f7f7;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height:30%;
+    bottom:0;
+    z-index: -1;
+  }
+  &:after{
+    content: '';
+    background-color: #171717;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 70%;
+    z-index: -1;
+  }
+   .container{
+     display: flex;
+     flex-wrap: wrap;
+     .left_box{
+       order: 2;
+       padding: 44px 0 0 0;
+       margin: 0 auto;
+       .logo{
+         width: 224px;
+         height: 50px;
+         display: block;
+         margin: 0 auto;
+         img{
+           width: 100%;
+           height: 100%;
          }
        }
-       .about{
+       .contact{
+         margin: 41px auto 0;
+         padding: 0 30px 0 40px;
+         li{
+           a{
+             color: #171717;
+             font-family: "Gotham Pro";
+             font-size: 16px;
+             font-weight: 400;
+             line-height: 12.48px;
+             position: relative;
+             padding: 8px 0 10px 49px;
+             display: block;
+             margin: 0 0 25px;
+             i{
+               position: absolute;
+               left: 0;
+               width: 29px;
+               height: 29px;
+               background-color: #db1515;
+               border-radius: 50%;
+               text-align: center;
+               top: 0;
+               &:before{
+                 color: #ffffff;
+                 font-size: 12px;
+                 line-height: 29px;
+               }
+             }
+           }
+         }
+       }
+       .nav{
+         display: flex;
+         justify-content: space-between;
+         padding: 17px 55px 40px 40px;
+         .soc{
+           display: flex;
+           justify-content: space-between;
+           width: 38%;
+           li{
+             .youtube{
+               width: 29px;
+               height: 21px;
+               background: url("../img/youtube.png");
+               background-repeat: no-repeat;
+               cursor: pointer;
+               transition: 0.5s;
+               display: block;
+               &:hover{
+                 background: url("../img/youtube_copy.png");
+                 background-repeat: no-repeat;
+               }
+             }
+             .inst{
+               width: 22px;
+               height: 21px;
+               background: url("../img/instagram.png");
+               background-repeat: no-repeat;
+               cursor: pointer;
+               transition: 0.5s;
+               display: block;
+               &:hover{
+                 background: url("../img/instagram_copy.png");
+                 background-repeat: no-repeat;
+               }
+             }
+           }
+         }
+         .lang{
+           display: flex;
+           justify-content: space-between;
+           li{
+             padding: 0 5px 0 5px;
+             a{
+               font-family: "Gotham Pro";
+               font-size: 14px;
+               line-height: 12.48px;
+               color: #383838;
+               font-weight: 400;
+               &:hover{
+                 color: #0660b3;
+               }
+             }
+             &.active{
+               a{
+                 color: #010101;
+                 font-weight: 700;
+                 &:hover{
+                   color: #0660b3;
+                 }
+               }
+             }
+           }
+         }
+       }
+       .linc{
+         color: #696969;
+         font-family: "Gotham Pro";
+         font-size: 13px;
+         font-weight: 300;
+         text-decoration: underline;
+         text-align: center;
+         cursor: pointer;
+         display: block;
+       }
+       p{
+         color: #696969;
+         font-family: "Gotham Pro";
+         font-size: 13px;
+         font-weight: 400;
+         line-height: 37px;
+         text-align: center;
+         margin: 25px auto 0;
+       }
+     }
+     .right_box{
+       order: 1;
+       padding: 0 0 40px 0;
+
+       .title{
          color: #ffffff;
          font-family: "Gotham Pro";
-         font-size: 12px;
-         font-weight: 300;
-         padding: 41px 15px 0px 21px;
-         line-height: 15px;
-         a{
-           color: #0660b3;
-           text-decoration: underline;
-           font-family: "Gotham Pro";
-           font-size: 12px;
-           font-weight: 300;
-           display: block;
+         font-size: 20px;
+         font-weight: 700;
+         padding: 6px 10px 30px 20px;
+         &:before{
+           top: 12px;
+         }
+       }
+       p{
+         color: #727272;
+         font-family: "Gotham Pro";
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 21px;
+         padding: 5px 8px 38px 21px;
+       }
+       form{
+
+         .box{
+          margin: 0 auto;
+           width: 300px;
+           .input_box{
+             margin: 0 0 43px 0;
+             textarea{
+               width: 290px;
+               height: 103px;
+               border-radius: 34px;
+               border: 1px solid #727272;
+               background: none;
+               padding: 10px 20px 10px 20px;
+               color: #727272;
+               font-family: "Gotham Pro";
+               font-size: 13px;
+               font-weight: 400;
+             }
+             input{
+               color: #727272;
+               font-family: "Gotham Pro";
+               font-size: 13px;
+               font-weight: 400;
+               line-height: 12.48px;
+               padding: 10px 20px 10px 20px;
+               color: #727272;
+             }
+           }
+           .about{
+             color: #ffffff;
+             font-family: "Gotham Pro";
+             font-size: 12px;
+             font-weight: 300;
+             padding: 41px 15px 0px 21px;
+             line-height: 15px;
+             a{
+               color: #0660b3;
+               text-decoration: underline;
+               font-family: "Gotham Pro";
+               font-size: 12px;
+               font-weight: 300;
+               display: block;
+             }
+           }
          }
        }
      }
    }
+}
+@media (min-width: 1280px){
+  .footer{
+    margin: 0 0 0 0;
+    padding: 0 0 80px 0;
+    overflow: hidden;
+    &:before{
+      height: 100%;
+      width: 40%;
+      left: 0;
+      right: 65%;
+    }
+    &:after{
+      width: 65%;
+      height: 100%;
+      right: 0;
+      left: 40%;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+      .left_box{
+        order: 1;
+        width: 40%;
+        padding: 85px 20px 0 15px;
+        .logo{
+          margin: 0;
+          width: 307px;
+          height: 67px;
+        }
+        .contact{
+          margin: 61px auto 0;
+          padding: 0 30px 0 18px;
+          li{
+            a{
+              font-size: 18px;
+              margin: 0 0 20px;
+            }
+          }
+        }
+        .nav{
+          padding: 39px 204px 80px 16px;
+        }
+        .linc{
+          text-align: left;
+          font-size: 14px;
+        }
+        p{
+          margin: 9px 0 0 0;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+      .right_box{
+        order: 2;
+        width: 60%;
+        padding: 83px 5px 0 5px;
+        .title{
+          font-size: 26px;
+          padding: 6px 10px 38px 20px;
+        }
+        p{
+          font-size: 16px;
+          line-height: 22px;
+          padding: 4px 80px 34px 5px;
+        }
+        form{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+         .box{
+           width: 50%;
+           .input_box{
+             margin: 0 0 31px;
+             input{
+               width: 314px;
+             }
+           }
+         }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1800px){
+  .footer{
+    margin: 0 0 0 0;
+    padding: 0 0 80px 0;
+    overflow: hidden;
+    &:before{
+      height: 100%;
+      width: 40%;
+      left: 0;
+      right: 65%;
+    }
+    &:after{
+      width: 65%;
+      height: 100%;
+      right: 0;
+      left: 40%;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+      .left_box{
+        order: 1;
+        width: 35%;
+        padding: 85px 20px 0 15px;
+        .logo{
+          margin: 0;
+          width: 307px;
+          height: 67px;
+        }
+        .contact{
+          margin: 61px auto 0;
+          padding: 0 30px 0 18px;
+          li{
+            a{
+              font-size: 18px;
+              margin: 0 0 20px;
+            }
+          }
+        }
+        .nav{
+          padding: 39px 204px 80px 16px;
+        }
+        .linc{
+          text-align: left;
+          font-size: 14px;
+        }
+        p{
+          margin: 9px 0 0 0;
+          text-align: left;
+          font-size: 14px;
+        }
+      }
+      .right_box{
+        order: 2;
+        width: 65%;
+        padding: 83px 85px 0 86px;
+        .title{
+          font-size: 26px;
+          padding: 6px 10px 38px 20px;
+        }
+        p{
+          font-size: 16px;
+          line-height: 22px;
+          padding: 4px 80px 34px 5px;
+        }
+        form{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .box{
+            width: 50%;
+            .input_box{
+              margin: 0 0 31px;
+              input{
+                width: 314px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

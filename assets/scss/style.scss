@@ -7,6 +7,9 @@
 @import "libs/slick";
 @import "libs/jquery-ui";
 @import "libs/swiper";
+@import "libs/responsive-tabs";
+
+
 body {
     position: relative;
     height: 100%;
@@ -221,16 +224,49 @@ button {
             color: #727272;
         }
         &.next{
-            right: 34%;
-            transform: translate(-50%, -2px);
+            right: 50%;
+            transform: translate(150%, -2px);
         }
         &.prev{
-            left: 42%;
-            transform: translate(-50%, -2px)rotate(180deg);
+            left: 50%;
+            transform: translate(-150%, -2px)rotate(180deg);
         }
     }
 }
 .time_slider{
+    .slick-arrow{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: 0.5s;
+        border: none;
+        width: 50px;
+        height: 49px;
+        background-color: #f6f6f6;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            &:before{
+                color: #0660b3;
+            }
+        }
+        &:before{
+            content: '\e80c';
+            font-family: 'fontello';
+            font-size: 15px;
+            color: #0660b3;
+        }
+        &.next{
+            right: 50%;
+            transform: translate(150%,55px);
+        }
+        &.prev{
+            left: 50%;
+            transform: translate(-150%,55px) rotate(180deg);
+        }
+    }
+}
+.partner_slider{
     .slick-arrow{
         position: absolute;
         bottom: 0;

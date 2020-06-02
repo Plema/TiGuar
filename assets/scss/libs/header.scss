@@ -2,27 +2,38 @@ header{
   padding: 0 0 0 0;
   z-index: 3;
   position: relative;
+
     .logo{
-      width: 160px;
-      height: 55px;
-      background-color: #ffffff;
-      position: absolute;
-      left: 0;
-      display: block;
-      z-index:2;
-      img{
-        position: absolute;
-        right: 10px;
-        width: 135px;
-        height: 30px;
-        top: 15px;
-      }
+      display: none;
     }
     .mobile{
+      .logo_mob{
+        width: 160px;
+        height: 55px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        display: block;
+        z-index:2;
+        top:0;
+        img{
+          position: absolute;
+          right: 10px;
+          width: 135px;
+          height: 30px;
+          top: 15px;
+        }
+      }
       display: flex;
       justify-content: space-between;
       padding: 15px 0 9px 0;
       position: relative;
+      &.fix{
+        position: fixed;
+        width: 100%;
+        background-color: #181818;
+        z-index:88;
+      }
      .container{
        display: flex;
        justify-content: space-between;
@@ -134,7 +145,32 @@ header{
   }
 
 }
-@media (min-width: 1024px){
+@media (min-width: 1280px){
+  header{
+    padding: 0 0 25px 0;
+    .mobile{
+      display: none;
+    }
+    .logo{
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      display: block;
+      z-index:2;
+      width: 380px;
+      height: 113px;
+      img{
+        width: 209px;
+        height: 46px;
+        top: 33px;
+        right: 20px;
+        position: absolute;
+
+      }
+    }
+  }
+}
+@media (min-width: 1800px){
   header{
     padding: 0 0 25px 0;
     .mobile{
