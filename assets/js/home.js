@@ -180,10 +180,24 @@ $(document).ready(function(){
                 });
 
                 show = false;
+                setTimeout(ovalIconInit1(), 1500);
             }
         });
 
     });
+    var timeout1, timeout2, setImeout, current1 = 0,
+        textArr1 = document.querySelectorAll('.benefits__inner')
+
+    function ovalIconInit1 () {
+        timeout1 = setTimeout(function() {
+            textArr1.forEach(function(i) { (i) >= i.classList.remove('active') });
+            textArr1[current1].classList.add("active");
+            (current1 === 4) ? current1 = 0 : current1++;
+            ovalIconInit1();
+        }, 2000);
+    };
+
+
 
     $(function () {
         //initialize swiper when document ready
@@ -242,9 +256,7 @@ $(document).ready(function(){
         $('.slick-slide').removeClass('h');
         $(this).addClass('h');
     });
-    $(window).scroll(function(){
-        $('.mobile').toggleClass('fix', $(this).scrollTop() > 0);
-    });
+
     $(".partners_filter .filter-open").on("click",function(){
         $(this).next().addClass("active")
     });
@@ -260,9 +272,39 @@ $(document).ready(function(){
         $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
         e.preventDefault();
     });
+    $(".tabs-button").click(function(e) {
+        e.preventDefault();
+        $(".tabs-button").removeClass('active');
+        $(this).addClass('active');
+    });
+
+    var distance = 50,
+        box = $('.filter');
+    $('button').on('click', function() {
+        box.stop().animate({
+            scrollTop: '+=' + (distance * $(this).data('factor'))
+        });
+    });
 
 
+    var $page = $('html, body');
+    $('.scrollto').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
+    });
 
+
+    $(".map_filter .filter-open").on("click",function(){
+        $(this).next().addClass("active")
+    });
+    $("#pp_offers_list_1 li").on("click",function(){
+        $("#pp_offers_list_1 li").removeClass("active"),
+            $(this).addClass("active"),
+            $(this).parent("#pp_offers_list_1").removeClass("active"),
+            $(".filter-open").find("span b").text($(this).find("a").text())
+    });
 
 
 });

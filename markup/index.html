@@ -66,8 +66,24 @@
                </nav>
            </div>
        </div>
-
-
+       <div class="dasctop">
+           <div class="container">
+               <ul class="menu">
+                   <li><a href="#">О бренде  </a></li>
+                   <li><a href="#">Стать партнером </a></li>
+                   <li><a href="#">Продукция</a></li>
+                   <li><a href="#">Гарантийная политика</a></li>
+                   <li><a href="news.html">Новости</a></li>
+                   <li><a href="faq.html">FAQ </a></li>
+                   <li><a href="#">Контакты</a></li>
+               </ul>
+               <ul class="contact">
+                   <li><a href="tel:+7 (3012) 701-800" class="phone"><i class="icon-communications"></i>+7 (3012) 701-800</a></li>
+                   <li><a href="#"><i class="icon-phone"></i></a></li>
+                   <li><a href="#"><i class="icon-social"></i></a></li>
+               </ul>
+           </div>
+       </div>
 </header>
     <div class="banner">
       <div class="container">
@@ -87,15 +103,15 @@
             <li><a href="#">Стать партнером </a></li>
             <li><a href="#">Продукция</a></li>
             <li><a href="#">Гарантийная политика</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">FAQ </a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="faq.html">FAQ </a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
       </div>
     </div>
   <div id="scrollto" class="scrollto">
-    <a href="#"><img src="img/computers.png">scroll down</a>
+    <a href="#anchor2"><img src="img/computers.png">scroll down</a>
 
   </div>
 
@@ -111,8 +127,8 @@
         <li><a href="#">Стать партнером </a></li>
         <li><a href="#">Продукция</a></li>
         <li><a href="#">Гарантийная политика</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">FAQ </a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="faq.html">FAQ </a></li>
         <li><a href="#">Контакты</a></li>
         <li><a href="#"><i class="icon-social"></i></a></li>
       </ul>
@@ -537,6 +553,10 @@
             <li class="tabs-button"><a href="#item-9">Автосервис Авто Запрос</a></li>
             <li class="tabs-button"><a href="#item-10">Автосервис Базис Авто</a></li>
           </ul>
+        </div>
+        <div class="button_slide">
+          <button data-factor="-1" class="next"><i class="icon-arrow"></i></button>
+          <button data-factor="1" class="prew"><i class="icon-arrow"></i></button>
 
         </div>
       </div>
@@ -710,7 +730,7 @@
       </div>
     </div>
     <a href="#" class="linc">Смотреть еще</a>
-    <a href="#" class="btn_slide">Посмотреть все вопросы</a>
+    <a href="faq.html" class="btn_slide">Посмотреть все вопросы</a>
   </div>
 </section>
 <section class="section_10">
@@ -747,24 +767,29 @@
      <p class="title">Контакты</p>
      <h3>Наши точки продаж</h3>
      <p class="fix">Создан для<span>суровых дорог России</span></p>
-   <div class="tabs">
-     <div class="select">
-      <select id="tab" class="tab" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}">
-        <option value="0">Дилеры</option>
-        <option value="1">Сертифицированные СТО</option>
-        <option value="2">Сертифицированные магазины автозапчастей</option>
-      </select>
-    </div>
-     <ul class="tabs_top">
-       <li class="tab active">Дилеры</li>
-       <li class="tab">Сертифицированные СТО</li>
-       <li class="tab">Сертифицированные магазины автозапчастей</li>
-     </ul>
-     <div id="test_hide0" class="tab_select"></div>
-     <div id="test_hide1" class="tab_select none"></div>
-     <div id="test_hide2" class="tab_select none"></div>
+     <div class="box">
+       <div class="map_filter">
+         <div class="filter">
+           <a class="filter-open" href="javascript:void(0)"><span><b>Дилеры</b> <i class="icon-next"></i></span></a>
+           <ul id="pp_offers_list_1" class="pp_offers_list_1">
+             <li class="tabs-button active"><a href="#item-11">Дилеры</a></li>
+             <li class="tabs-button "><a href="#item-12">Сертифицированные СТО</a></li>
+             <li class="tabs-button"><a href="#item-13">Сертифицированные магазины автозапчастей</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="map_content">
+         <div class="tabs-content active" data-id="item-11">
 
-   </div>
+         </div>
+         <div class="tabs-content" data-id="item-12">
+
+         </div>
+         <div class="tabs-content" data-id="item-13">
+
+         </div>
+       </div>
+     </div>
 
      <div class="map">
 
@@ -772,6 +797,7 @@
    </div>
   </div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Footer -->
 <footer class="footer anchor" id="anchor11">

@@ -5,7 +5,9 @@ $(document).ready(function(){
     $('.icon-close').on("click", function () {
         $('.sub_menu').fadeOut();
     });
-
+    $(window).scroll(function(){
+        $('.mobile').toggleClass('fix', $(this).scrollTop() > 0);
+    });
     $(function() {
         jcf.replaceAll();
 

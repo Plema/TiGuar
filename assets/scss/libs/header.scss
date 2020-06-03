@@ -7,6 +7,7 @@ header{
       display: none;
     }
     .mobile{
+      background: #181818;
       .logo_mob{
         width: 160px;
         height: 55px;
@@ -143,6 +144,9 @@ header{
     .dasctop_banner{
     display: none;
   }
+  .dasctop{
+    display: none;
+  }
 
 }
 @media (min-width: 1280px){
@@ -152,20 +156,96 @@ header{
       display: none;
     }
     .logo{
-      background-color: #ffffff;
       position: absolute;
+      z-index: 2;
       left: 0;
       display: block;
-      z-index:2;
-      width: 380px;
+      width: 300px;
       height: 113px;
+      background-color: #fff;
       img{
-        width: 209px;
-        height: 46px;
+        position: absolute;
         top: 33px;
         right: 20px;
-        position: absolute;
+        width: 180px;
+        height: 37px;
 
+      }
+    }
+    .dasctop{
+      display: block;
+      background-color: #181818;
+      padding: 48px 0 47px;
+      .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+        .menu{
+          z-index: 1;
+          width: 78%;
+          padding: 0 12px 0 209px;
+          display: flex;
+          justify-content: space-between;
+          li{
+            a{
+              color: #ffffff;
+              font-family: "Gotham Pro";
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 12.48px;
+              transition: 0.5s;
+              &:hover{
+                color: #181818;
+              }
+            }
+          }
+        }
+        .contact{
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          width: 25%;
+          padding: 0 0px 0 10px;
+          li{
+            a{
+              font-family: 'Gotham Pro';
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 5.48px;
+              position: relative;
+              display: block;
+              margin: 0 24px 0 0;
+              color: #fff;
+              &.phone{
+                padding: 5px 0px 0 35px;
+                letter-spacing: 0.6px;
+                margin: 0 0px 0 0;
+              }
+              .icon-communications{
+                background-color: #ffffff;
+                &:before{
+                  color: #db1515;
+                }
+              }
+              i{
+                position: absolute;
+                left: 0;
+                width: 29px;
+                height: 29px;
+                background-color: #db1515;
+                border-radius: 50%;
+                cursor: pointer;
+                text-align: center;
+                top: -5px;
+                &:before{
+                  color: #ffffff;
+                  font-size: 15px;
+                  line-height: 29px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -177,13 +257,89 @@ header{
       display: none;
     }
     .logo{
-      width: 548px;
+      width: 531px;
       height: 113px;
       img{
-        width: 209px;
-        height: 46px;
-        top: 33px;
-        right: 20px;
+        width: 187px;
+        height: 41px;
+        top: 36px;
+        right: 24px;
+      }
+    }
+    .dasctop{
+      display: block;
+      background-color: #181818;
+      padding: 48px 0 47px;
+      .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+        .menu{
+          z-index: 1;
+          width: 75%;
+          padding: 0 12px 0 242px;
+          display: flex;
+          justify-content: space-between;
+          li{
+            a{
+              color: #ffffff;
+              font-family: "Gotham Pro";
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 12.48px;
+              transition: 0.5s;
+              &:hover{
+                color: #181818;
+              }
+            }
+          }
+        }
+        .contact{
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          width: 25%;
+          padding: 0 0px 0 26px;
+          li{
+            a{
+              font-family: 'Gotham Pro';
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 5.48px;
+              position: relative;
+              display: block;
+              margin: 0 24px 0 0;
+              color: #fff;
+              &.phone{
+                padding: 5px 0px 0 49px;
+                letter-spacing: 0.6px;
+                margin: 0 0px 0 0;
+              }
+              .icon-communications{
+                background-color: #ffffff;
+                &:before{
+                  color: #db1515;
+                }
+              }
+              i{
+                position: absolute;
+                left: 0;
+                width: 29px;
+                height: 29px;
+                background-color: #db1515;
+                border-radius: 50%;
+                cursor: pointer;
+                text-align: center;
+                top: -5px;
+                &:before{
+                  color: #ffffff;
+                  font-size: 15px;
+                  line-height: 29px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
