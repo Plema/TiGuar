@@ -8,15 +8,16 @@ header{
     }
     .mobile{
       background: #181818;
+      padding: 15px 0 11px;
       .logo_mob{
-        width: 160px;
-        height: 55px;
-        background-color: #ffffff;
         position: absolute;
+        z-index: 2;
+        top: 0;
         left: 0;
         display: block;
-        z-index:2;
-        top:0;
+        width: 160px;
+        height: 56px;
+        background-color: #fff;
         img{
           position: absolute;
           right: 10px;
@@ -42,7 +43,7 @@ header{
          display: flex;
          justify-content: space-between;
          width: 96px;
-         margin: 0px 0 0 160px;
+         margin: 0 0 0 161px;
          li{
            a{
              width: 29px;
@@ -72,7 +73,7 @@ header{
              color: #fff;
              position: absolute;
              right: -4px;
-             top: 10px;
+             top: 7px;
              z-index:2;
            }
          }
@@ -257,13 +258,13 @@ header{
       display: none;
     }
     .logo{
-      width: 531px;
+      width: 551px;
       height: 113px;
       img{
-        width: 187px;
-        height: 41px;
         top: 36px;
         right: 24px;
+        width: 207px;
+        height: 43px;
       }
     }
     .dasctop{

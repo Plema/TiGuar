@@ -1,0 +1,236 @@
+.section_1{
+  padding: 25px 0 0 0;
+  .container{
+    .img_box{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 64px auto 0;
+      img{
+        width: 288px;
+        height: 187px;
+        margin: 0 auto 33px;
+      }
+      .video{
+        width: 288px;
+        height: 187px;
+        position: relative;
+        margin: 0 auto;
+        i{
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%, -50%);
+          width: 69px;
+          height: 69px;
+          background-color: #db1515;
+          border-radius: 50%;
+          &:before{
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: #fff;
+            left: 48%;
+            position: absolute;
+          }
+        }
+
+      }
+    }
+    .text{
+      position: relative;
+      margin: 61px 0 0 0;
+      padding: 0 0px 0 36px;
+      &:before{
+        content: '';
+        width: 27px;
+        height: 1px;
+        background-color: #181818;
+        position: absolute;
+        left: 0;
+        top:16px;
+      }
+      .paragraf{
+        margin: 0 0 25px 0;
+        p{
+          color: #181818;
+          font-family: "Gotham Pro";
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 24px;
+        }
+        ul{
+          li{
+            color: #181818;
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.section_8{
+  padding: 0 0 0 0;
+  .container{
+    .title{
+      display: none;
+    }
+    h3{
+      font-family: 'Gotham Pro';
+      font-size: 26px;
+      font-weight: 400;
+      margin: 11px 0 60px 0;
+      color: #181818;
+      padding: 0 0 0 17px;
+      display: block;
+      line-height: 41px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 9px;
+        height: 9px;
+        background-color: #0660b3;
+        top: 19px;
+      }
+    }
+    .linc_2{
+      margin: 0 0 45px;
+    }
+    .box{
+      .partners_content{
+        margin: 30px 0 0;
+        .tabs-content{
+          padding: 0 0 62px;
+        }
+      }
+    }
+  }
+  .bottom{
+    display: none;
+  }
+}
+.section_10{
+  .container{
+     .top{
+       display: none;
+     }
+    .bottom{
+      padding: 7px 0 0;
+      .fix{
+        display: none;
+      }
+      .box{
+        .map_content{
+          margin: 43px 0 0;
+        }
+      }
+    }
+  }
+}
+footer{
+  .container{
+    .left_block{
+      padding: 94px 0 0;
+    }
+  }
+}
+
+
+@media (min-width: 1280px){
+  .section_1{
+    padding: 34px 0 0;
+    .container{
+      .img_box{
+        margin: 82px auto 0;
+        img{
+          width: 412px;
+          height: 268px;
+        }
+        .video{
+          width: 412px;
+          height: 268px;
+        }
+      }
+      .text{
+        margin: 43px 0 0 15px;
+        padding: 0 30px 0 107px;
+        &:before{
+          top: 11px;
+          width: 81px;
+        }
+        .paragraf{
+          p{
+            font-size: 18px;
+            line-height: 28px;
+
+          }
+          ul{
+            li{
+              font-size: 18px;
+              line-height: 28px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .section_8{
+    padding: 88px 0 0;
+    z-index: 2;
+    &:before{
+      display: none;
+    }
+    .container{
+      h3{
+        font-size: 50px;
+        margin: 11px 0 60px;
+        padding: 0 0 0 34px;
+        &:before{
+          left: 14px;
+        }
+      }
+      .linc_2{
+        margin: 0 0 0px;
+      }
+      .box{
+        .partners_content{
+          margin: 17px 0 0;
+          .tabs-content{
+            padding: 0 0 0px;
+            .text{
+              margin: 37px 20px 0 79px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section_10{
+    transform: translate(0px, -107px);
+    z-index: 1;
+    padding: 158px 0 61px;
+
+    &:after{
+      display: none;
+    }
+    .container{
+      .bottom{
+        h3{
+          margin: 73px 0 80px 33px;
+        }
+        .box{
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  footer{
+    transform: translate(0px, -168px);
+  }
+}

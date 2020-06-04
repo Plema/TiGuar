@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   header{
     .mobile{
       background: none;
@@ -13,18 +13,18 @@
   .scrollto{
     position: absolute;
     z-index: 88;
-    right: 0;
+    right: -48px;
     bottom: 50px;
     display: flex;
-    height: 40px;
-    padding: 0 0 0 20px;
+    height: 30px;
+    padding: 0 0 0 0px;
     cursor: pointer;
-    transform: rotate(0deg);
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 150px;
+    transform: rotate(-90deg);
     a{
-      transform: rotate(-90deg);
       color: #8b8b8b;
       font-family: "Gotham Pro";
       font-size: 12px;
@@ -112,7 +112,7 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
-  padding: 65px 0px 57px 0;
+  padding: 66px 0 57px;
   .menu_fix{
     display: none;
   }
@@ -177,7 +177,7 @@
   }
 }
 .section_3{
-  padding: 37px 0 54px 0;
+  padding: 70px 0 58px;
   .container{
    .content{
      position: relative;
@@ -235,7 +235,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding: 65px 0 117px;
+  padding: 70px 0 144px;
   .container{
     .title{
       color: #ffffff;
@@ -385,7 +385,7 @@
   }
 }
 .section_5{
-  padding: 64px 0 119px;
+  padding: 63px 0 72px;
   .container{
     h3{
       color: #181818;
@@ -408,6 +408,7 @@
         z-index: -1;
       }
       .slide{
+        min-height: 190px;
         .benefits{
           .benefits__inner{
             position: relative;
@@ -428,7 +429,7 @@
             &.active{
               .benefits__element{
                 color: #db1515;
-                font-size: 50px;
+                font-size: 25px;
                 font-weight: 700;
                 transition: 0.5s;
                 .benefits__number{
@@ -511,6 +512,8 @@
   background-image: url(../img/fon_6.png);
   background-repeat: no-repeat;
   background-position: center;
+  padding: 8px 0 26px 0;
+  background-size: cover;
   .container{
     .content{
       position: relative;
@@ -560,7 +563,7 @@
   }
 }
 .section_7{
-  padding: 62px 0 0 0;
+  padding: 64px 0 0;
   .container{
     h3{
       font-family: 'Gotham Pro';
@@ -642,157 +645,21 @@
 
 }
 .section_8{
-  padding: 62px 0 0 0;
-  position: relative;
   .container{
-    h3{
-      font-family: 'Gotham Pro';
-      font-size: 26px;
-      font-weight: 400;
-      color: #181818;
-      margin: 11px 0px 40px 0px;
-    }
     .linc_2{
-      color: #000000;
-      font-family: "Gotham Pro";
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 12.48px;
-      text-decoration: underline;
-      display: block;
-      margin: 0 0 40px 0;
+      margin: 0 0 45px;
     }
     .box{
-      .partners_filter{
-        position: relative;
-        .button_slide{
-          display: none;
-        }
-        .filter{
-          position: relative;
 
-          .filter-open{
-            font-size: 16px;
-            width: 291px;
-            min-height: 68px;
-            padding: 22px 10px;
-            margin: 0 auto;
-            border-radius: 34px;
-            background-color: #db1515;
-            transition: all 0.5s;
-            text-align: center;
-            display: block;
-            color: #ffffff;
-            font-family: "Gotham Pro";
-            font-size: 16px;
-            font-weight: 400;
-          }
-          #pp_offers_list{
-            display: none;
-            &.active{
-              display: block;
-              position: absolute;
-              .tabs-button{
-                a{
-                  font-family: 'Gotham Pro';
-                  line-height: 20px;
-                  display: block;
-                  width: 291px;
-                  height: 68px;
-                  margin: 5px auto;
-                  padding: 22px 10px;
-                  color: #fff;
-                  border-radius: 34px;
-                  background-color: #727272;
-                }
-              }
-            }
-          }
-
-        }
-      }
-      .partners_content {
-        margin: 20px 0 0 0;
-        .tabs-content{
-          display: none;
-          padding: 0 0 40px 0;
-          &.active{
-            display: block;
-          }
-          img{
-            display: block;
-            width: 288px;
-            height: 384px;
-          }
-          .text{
-            margin: 23px 0 0 0;
-            h4{
-              color: #181818;
-              font-family: "Gotham Pro";
-              font-size: 22px;
-              font-weight: 700;
-              letter-spacing: 1.4px;
-            }
-            span{
-              display: block;
-              font-family: "Gotham Pro";
-              font-size: 16px;
-              font-weight: 400;
-              letter-spacing: .85px;
-            }
-            p{
-              color: #181818;
-              font-family: "Gotham Pro";
-              font-size: 16px;
-              font-weight: 300;
-              line-height: 24px;
-              padding: 21px 10px 22px 0;
-            }
-            .linc{
-              color: #0660b3;
-              font-family: "Gotham Pro";
-              font-size: 16px;
-              font-weight: 700;
-              line-height: 12.48px;
-              &:before{
-                content: '';
-              }
-            }
-          }
-        }
-      }
     }
-
   }
   .bottom{
-    background-image: url("../img/fon_7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    padding: 65px 0 117px;
-    .container{
-      p{
-        font-size: 20px;
-        font-weight: 400;
-        color: #181818;
-        font-family: "Gotham Pro";
-        padding: 0 0 40px 0;
-        strong{
-          font-weight: 700;
-          display: block;
-          width: 204px;
-          color: #fff;
-          padding: 0 10px 0 20px;
-          background-color: #181818;
-          transform: translate(40px, 5px);
-        }
-      }
-    }
 
   }
 }
+
 .section_9{
-  padding: 50px 0 33px;
+  padding: 68px 0 33px;
   .container{
     h3{
       color: #181818;
@@ -883,167 +750,7 @@
     }
   }
 }
-.section_10{
-  position: relative;
-  padding: 65px 0px 57px 0;
-  overflow: hidden;
-  &:before{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    left: 0;
-    top:0;
-    background-image: url("../img/fon_3.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    width: 100%;
-  }
-  .container{
-    h3{
-      font-family: 'Gotham Pro';
-      font-size: 26px;
-      font-weight: 400;
-      color: #ffffff;
-      margin: 11px 0 35px;
-    }
-    .top{
-      .title{
-        color: #ffffff;
-      }
-      form{
-       width: 300px;
-        margin: 0 auto;
-        .input_box{
-          margin: 0 0 41px 0;
-          label{
-            padding: 0 0 11px 0;
-            display: block;
-          }
-          input{
-            padding: 10px 20px 10px 20px;
-            color: #727272;
-          }
-        }
-      }
-      .about{
-          color: #ffffff;
-          font-family: "Gotham Pro";
-          font-size: 12px;
-          font-weight: 300;
-          padding: 41px 15px 0px 21px;
-          line-height: 15px;
-         a{
-           color: #0660b3;
-           text-decoration: underline;
-           font-family: "Gotham Pro";
-           font-size: 12px;
-           font-weight: 300;
-           display: block;
-         }
-      }
-    }
-    .bottom{
-      padding: 174px 0 0 0;
-      .title{
-        color: #ffffff;
-      }
-      .fix{
-        font-size: 20px;;
-        line-height: 29px;
-        color: #ffffff;
-        font-family: "Gotham Pro";
-        font-weight: 400;
-        position: absolute;
-        width: 100%;
-        transform: translate(0px, -212px);
-       span{
-         font-family: "Gotham Pro";
-         font-weight: 700;
-         color: #181818;
-         font-size: 20px;
-         line-height: 28px;
-         background:#ffffff ;
-         display: inline-block;
-         margin: 2px 0 0 34px;
-         padding: 0 9px 0px 0;
-       }
-      }
-      .box{
-        .map_filter{
-          position: relative;
-          .button_slide{
-            display: none;
-          }
-          .filter{
-            position: relative;
 
-            .filter-open{
-              font-size: 16px;
-              width: 291px;
-              min-height: 68px;
-              padding: 22px 10px;
-              margin: 0 auto;
-              border-radius: 34px;
-              background-color: #db1515;
-              transition: all 0.5s;
-              text-align: center;
-              display: block;
-              color: #ffffff;
-              font-family: "Gotham Pro";
-              font-size: 16px;
-              font-weight: 400;
-            }
-            #pp_offers_list_1{
-              display: none;
-              &.active{
-                display: block;
-                position: absolute;
-                .tabs-button{
-                  a{
-                    font-family: 'Gotham Pro';
-                    line-height: 20px;
-                    display: block;
-                    width: 291px;
-                    height: 68px;
-                    margin: 5px auto;
-                    padding: 22px 10px;
-                    color: #fff;
-                    border-radius: 34px;
-                    background-color: #727272;
-                  }
-                }
-              }
-            }
-
-          }
-        }
-        .map_content {
-          margin: 20px 0 0 0;
-          .tabs-content{
-            display: none;
-            padding: 0 0 40px 0;
-            &.active{
-              display: block;
-            }
-          }
-        }
-      }
-   }
-       h3{
-        margin: 12px 0 40px;
-      }
-      .map{
-        width: 290px;
-        height: 468px;
-        background-image: url("../img/map_mob.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 0 auto;
-      }
-    }
-  }
 
 @media (min-width: 1024px) {
 
@@ -1271,14 +978,14 @@
   .section_2{
     padding: 157px 0 57px;
     position: relative;
-    .menu_fix{
-      position: absolute;
+    .menu_fix.fixed{
+      position: fixed;
       top:0;
       display: flex;
       justify-content: space-between;
       background-color: #181818;
       top:0;
-      width: 100%;
+      width: 100%; 
       &.fix{
         position: fixed;
       }
@@ -1662,166 +1369,21 @@
       }
     }
     }
-  .section_8{
-    height: 965px;
-    padding: 101px 0 0;
-    position: relative;
-    &:before{
-      position: absolute;
-      content: '';
-      background-image: url("../img/ell_8.png");
-      height: 100%;
-      background-repeat: no-repeat;
-      z-index: -1;
-      background-size: auto;
-      right: 0;
-      width: 83%;
-      top: -6%;
-
-    }
-    .container{
-      .title{
-        margin: 0 0 0 13px;
-      }
-      h3{
+  .section_8 {
+    padding: 101px 0 238px;
+    .container {
+      h3 {
         font-size: 50px;
-        margin: 10px 0 14px 9px;
+        margin: 10px 0 52px 9px;
       }
       .linc_2{
-        color: #000000;
-        font-family: "Gotham Pro";
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 12.48px;
-        text-decoration: underline;
-        display: block;
-        margin: 0 0 40px 0;
+        margin: 0 0 0px;
       }
-      .box{
-        display: flex;
-        justify-content: space-between;
-        .partners_filter{
-          width: 25%;
-          height: fit-content;
-          padding: 0 0 40px 0;
-          .button_slide{
-            display: block;
-            position: absolute;
-          }
-          .filter{
-            position: relative;
-            height: 250px;
-            overflow: hidden;
-            .filter-open{
-              display: none;
-            }
-
-            #pp_offers_list{
-              display: flex;
-              flex-direction: column;
-              .tabs-button{
-                display: block;
-                padding: 10px 0 15px 75px;
-                cursor: pointer;
-                a{
-                  color: #181818;
-                  font-family: "Gotham Pro";
-                  font-size: 14px;
-                  font-weight: 400;
-                }
-                &.active{
-                  position: relative;
-                  &:before{
-                    position: absolute;
-                    left: 13px;
-                    top: 46%;
-                    width: 50px;
-                    height: 1px;
-                    content: '';
-                    background-color: #db1515;
-                  }
-                  a{
-                    color: #db1515;
-                    font-family: "Gotham Pro";
-                    font-size: 18px;
-                    font-weight: 700;
-                  }
-                }
-              }
-            }
-
-          }
-        }
-        .partners_content {
-          margin: 20px 0 0 0;
-          width: 75%;
-          padding: 0 0 0 29px;
-          .tabs-content{
-            display: none;
-            padding: 0 0 40px 0;
-            &.active{
-              display: flex;
-              justify-content: space-between;
-            }
-            img{
-              display: block;
-              width: 316px;
-              height: 421px;
-            }
-            .text{
-              margin: 31px 20px 0 79px;
-              h4{
-                font-size: 28px;
-              }
-              span{
-                font-size: 18px;
-              }
-              p{
-                font-size: 18px;
-                padding: 55px 26px 28px 0;
-                line-height: 27px;
-              }
-              .linc{
-                font-size: 18px;
-                &:before{
-                  content: '';
-                }
-              }
-            }
-          }
-        }
-      }
-
     }
     .bottom{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      left: 0;
-      transform: translate(0px, 0px);
-      height: 390px;
-      z-index: -1;
       .container{
         p{
-          font-size: 28px;
-          padding: 0 0 0 0;
-          margin: 119px 0 0 78px;
-          width: 50%;
-          strong{
-            font-size: 28px;
-            width: 392px;
-            padding: 5px 0 5px 12px;
-            transform: translate(197px, -1px);
-
-          }
-        }
-        .btn_red{
-          right: 0;
-          padding: 28px 10px 21px 10px;
-          transform: translate(-65px, -69px);
-          width: 315px;
-          min-height: 69px;
-          border-radius: 34px;
+          margin: 132px 0 0 78px;
         }
       }
     }
@@ -1963,7 +1525,6 @@
             }
             .filter{
               position: relative;
-              height: 250px;
               overflow: hidden;
               .filter-open{
                 display: none;
@@ -2029,7 +1590,7 @@
         display: block;
         .container{
           nav{
-            padding: 30px 0 0 314px;
+            padding: 29px 0 25px 330px;
             display: flex;
             justify-content: space-between;
             .soc{
@@ -2125,11 +1686,11 @@
 
     }
     .banner{
-      padding: 205px 0 321px;
+      padding: 182px 0 321px;
       position: relative;
       .container{
         text-align: left;
-        padding: 0 0 0 123px;
+        padding: 0 0 0 141px;
         h2{
           font-size: 24px;
         }
@@ -2435,7 +1996,7 @@
     }
   }
   .section_5{
-    padding: 190px 0 168px;
+    padding: 190px 0 159px;
     position: relative;
     .container{
       .title{
@@ -2585,15 +2146,7 @@
       }
     }
   }
-  .section_8{
-    height: 965px;
-    padding: 101px 0 0;
-    position: relative;
 
-    .container{
-
-    }
-  }
   .section_9{
     padding: 153px 0 137px;
     .container{

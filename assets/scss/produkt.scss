@@ -1,29 +1,34 @@
 .section_1{
-  padding: 25px 0 0 0;
+  padding: 25px 0 50px 0;
   .container{
     .produkt_container{
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       margin: 60px auto 0;
       .produkt{
+        margin: 0 auto;
         .img{
           position: relative;
           width: 290px;
           cursor: pointer;
           transition: 0.5s;
           span{
+            transition: 0.5s;
             .btn_produkt{
-              width: 208px;
               height: 58px;
               border-radius: 29px;
-              border-radius: 29px;
+              color: #727272;
               border: 1px solid #727272;
               font-family: "Gotham Pro";
               font-size: 14px;
               font-weight: 400;
               line-height: 12.48px;
               display: block;
+              margin: 125px auto 62px;
+              width: 291px;
+              text-align: center;
+              padding: 19px 15px 19px 15px;
             }
           }
           img{
@@ -64,25 +69,29 @@
         text-decoration: underline;
         width: 100%;
         max-width: 300px;
+        text-align: center;
       }
     }
   }
 }
 @media (min-width: 1280px){
   .section_1{
+    padding: 34px 0 50px;
     .container{
       .produkt_container{
+        margin: 75px auto 0;
         .produkt{
+          margin: 0 13px 57px;
           .img{
             position: relative;
-            width: 290px;
-            height: 305px;
+            width: 297px;
             cursor: pointer;
             transition: 0.5s;
             &:hover{
               transition: 0.5s;
               span{
                 display: block;
+                transition: 0.5s;
               }
             }
             span{
@@ -92,7 +101,7 @@
               left: 0;
               top:0;
               width: 100%;
-              height: 100%;
+              height: 312px;
               background: rgba(0, 0, 0, 0.85);
               .btn_produkt{
                 width: 208px;
@@ -109,10 +118,13 @@
             img{
               display: block;
               width: 100%;
-              height: 100%;
+              height: 312px;
             }
           }
 
+        }
+        .next{
+          display: none;
         }
       }
     }

@@ -267,17 +267,37 @@ $(document).ready(function(){
             $(".filter-open").find("span b").text($(this).find("a").text())
     });
 
-    $(".tabs-button a").click(function(e) {
+    $(".map_filter .filter-open").on("click",function(){
+        $(this).next().addClass("active")
+    });
+    $("#pp_offers_list_1 li").on("click",function(){
+        $("#pp_offers_list_1 li").removeClass("active"),
+            $(this).addClass("active"),
+            $(this).parent("#pp_offers_list_1").removeClass("active"),
+            $(".filter-open").find("span b").text($(this).find("a").text())
+    });
+
+    $(".section_8 .tabs-button a").click(function(e) {
         $("div [data-id]").removeClass("active");
         $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
         e.preventDefault();
     });
-    $(".tabs-button").click(function(e) {
+    $(".section_8 .tabs-button").click(function(e) {
         e.preventDefault();
         $(".tabs-button").removeClass('active');
         $(this).addClass('active');
     });
 
+    $(".section_10 .tab-button a").click(function(e) {
+        $("div [data-id]").removeClass("active");
+        $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
+        e.preventDefault();
+    });
+    $(".section_10 .tab-button").click(function(e) {
+        e.preventDefault();
+        $(".tab-button").removeClass('active');
+        $(this).addClass('active');
+    });
     var distance = 50,
         box = $('.filter');
     $('button').on('click', function() {
@@ -309,4 +329,22 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function() {
 
+    var element = $(".menu_fix");
+    var height_el = element.offset().top;
+    $(window).scroll(function() {
+
+        if($(window).scrollTop() > height_el) {
+
+            element.addClass("fixed");
+
+        } else {
+
+            element.removeClass("fixed");
+
+        }
+
+    });
+
+});

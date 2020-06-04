@@ -1,0 +1,267 @@
+.section_1{
+  padding: 26px 0 0;
+  position: relative;
+  .container{
+    .breadcrumbs{
+      padding: 0 35px 0 0;
+    }
+    .box{
+      margin: 43px 0 0 0;
+      .partners_filter{
+        position: relative;
+        .button_slide{
+          display: none;
+        }
+        .filter{
+          position: relative;
+
+          .filter-open{
+            width: 292px;
+            height: 68px;
+            border-radius: 34px;
+            border: 1px solid #181818;
+            min-height: 68px;
+            padding: 22px 10px;
+            margin: 0 auto;
+            transition: all 0.5s;
+            text-align: center;
+            display: block;
+            color: #db1515;
+            font-family: "Gotham Pro";
+            font-size: 18px;
+            font-weight: 700;
+          }
+          #pp_offers_list{
+            display: none;
+            &.active{
+              display: block;
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, 10px);
+              .tabs-button{
+                a{
+                  font-family: 'Gotham Pro';
+                  line-height: 20px;
+                  display: block;
+                  width: 291px;
+                  min-height: 68px;
+                  margin: 5px auto;
+                  padding: 22px 10px;
+                  color: #fff;
+                  border-radius: 34px;
+                  background-color: #727272;
+                  text-align: center;
+                }
+              }
+            }
+          }
+
+        }
+      }
+      .partners_content {
+        margin: 20px 0 0 0;
+        .tabs-content{
+          display: none;
+          padding: 0 0 40px 0;
+          &.active{
+            display: block;
+          }
+          .title{
+            font-family: "Gotham Pro";
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            display: block;
+            margin: 0 0 70px 0;
+          }
+          .img_block{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            img{
+              display: block;
+              width: 291px;
+              height: 189px;
+              border: 1px solid #ebebeb;
+              margin: 0 auto 50px;
+            }
+          }
+          .text{
+            position: relative;
+            padding: 5px 5px 0 38px;
+            &:before{
+              content: '';
+              width: 27px;
+              height: 1px;
+              background-color: #181818;
+              position: absolute;
+              left: 0;
+              top:16px;
+            }
+            p{
+              color: #000000;
+              font-family: "Gotham Pro";
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 24px;
+              display: block;
+            }
+            .paragraph{
+               margin:10px 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+@media (min-width: 1280px) {
+
+  .section_1{
+    padding: 32px 0 0;
+    position: relative;
+    .container{
+      .title{
+        margin: 0 0 0 13px;
+      }
+      h3{
+        font-size: 50px;
+        margin: 10px 0 14px 9px;
+      }
+      .linc_2{
+        color: #000000;
+        font-family: "Gotham Pro";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 12.48px;
+        text-decoration: underline;
+        display: block;
+        margin: 0 0 40px 0;
+      }
+      .box{
+        display: flex;
+        justify-content: space-between;
+        margin: 55px 0 0;
+        .partners_filter{
+          width: 23%;
+          height: auto;
+          padding: 0 0 40px;
+          max-height: 850px;
+          overflow: auto;
+          .button_slide{
+            display: block;
+            position: absolute;
+          }
+          .filter{
+            position: relative;
+            overflow: hidden;
+            .filter-open{
+              display: none;
+            }
+
+            #pp_offers_list{
+              display: flex;
+              flex-direction: column;
+              .tabs-button{
+                display: block;
+                padding: 10px 0 15px 75px;
+                cursor: pointer;
+                a{
+                  color: #181818;
+                  font-family: "Gotham Pro";
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+                &.active{
+                  position: relative;
+                  &:before{
+                    position: absolute;
+                    left: 13px;
+                    top: 46%;
+                    width: 50px;
+                    height: 1px;
+                    content: '';
+                    background-color: #db1515;
+                  }
+                  a{
+                    color: #db1515;
+                    font-family: "Gotham Pro";
+                    font-size: 18px;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+        .partners_content {
+          width: 75%;
+          margin: 7px 0 0;
+          padding: 0 0 0 26px;
+
+          .tabs-content{
+            display: none;
+            padding: 0 0 59px;
+            &.active{
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+            }
+            .title{
+             font-size: 50px;
+              width: 100%;
+              margin: 0 0 85px;
+              line-height: 50px;
+              &:before{
+                top: 23px;
+              }
+
+            }
+            .img_block{
+              width: 100%;
+              img{
+                width: 420px;
+                height: 272px;
+                margin: 0;
+              }
+            }
+            .text{
+              position: relative;
+              padding: 20px 0px 0 105px;
+              margin: 60px 0px 0 0px;
+              &:before{
+                position: absolute;
+                top: 32px;
+                left: 0;
+                width: 84px;
+                height: 1px;
+                content: '';
+                background-color: #181818;
+              }
+
+              p{
+
+                font-size: 18px;
+
+              }
+              .paragraph{
+                margin: 34px 0 0;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+@media (min-width: 1800px) {
+
+
+}
