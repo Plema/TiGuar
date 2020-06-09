@@ -276,22 +276,27 @@
                 display: flex;
                 justify-content: space-between;
                 .tab-button{
-                  font-family: 'Gotham Pro';
                   line-height: 20px;
                   display: block;
                   width: 316px;
-                  height: 68px;
+                  min-height: 68px;
                   margin: 5px 7px;
                   padding: 22px 10px;
                   text-align: center;
                   border-radius: 34px;
                   background-color: #727272;
-
+                  cursor: pointer;
+                  position: relative;
                   a{
                     color: #ffffff;
                     font-family: "Gotham Pro";
                     font-size: 16px;
                     font-weight: 400;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    width: 100%;
                   }
                   &.active{
                     background-color: #db1515;

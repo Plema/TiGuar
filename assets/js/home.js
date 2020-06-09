@@ -167,7 +167,7 @@ $(document).ready(function(){
         var show = true;
         var countbox = ".benefits__inner";
         $(window).on("scroll load resize", function () {
-            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+            //if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
             var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
             var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
             var w_height = $(window).height(); // Высота окна браузера
@@ -229,13 +229,17 @@ $(document).ready(function(){
                     spaceBetween: 30
                 },
                 1280: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 30
                 },
                 1600: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                1800: {
                     slidesPerView: 5,
                     spaceBetween: 30
-                }
+                },
             }
         });
     });
@@ -316,6 +320,7 @@ $(document).ready(function(){
 
     $('.scrollto').on('click', function() {
         $('html,body').animate({scrollTop:$('.section_2').offset().top+"px"},{duration:1E3});
+
     });
 
 
@@ -335,6 +340,25 @@ $(document).ready(function(){
 $(document).ready(function() {
 
     var element = $(".menu_fix");
+    var height_el = element.offset().top;
+    $(window).scroll(function() {
+
+        if($(window).scrollTop() > height_el) {
+
+            element.addClass("fixed");
+
+        } else {
+
+            element.removeClass("fixed");
+
+        }
+
+    });
+
+});
+$(document).ready(function() {
+
+    var element = $(".leng_fix");
     var height_el = element.offset().top;
     $(window).scroll(function() {
 

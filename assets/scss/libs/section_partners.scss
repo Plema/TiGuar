@@ -344,7 +344,8 @@
         .btn_red{
           right: 0;
           padding: 28px 10px 21px 10px;
-          transform: translate(-65px, -69px);
+          transform: translate(45px,-109px);
+
           width: 315px;
           min-height: 69px;
           border-radius: 34px;
@@ -360,7 +361,13 @@
   .section_8{
     padding: 101px 0 0;
     position: relative;
-
+    .bottom{
+      .container{
+        .btn_red{
+          transform: translate(-65px, -69px);
+        }
+      }
+    }
     .container{
 
     }
