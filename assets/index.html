@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
 </head>
 <body>
-
-<section class="section_1" >
+<!-- Popup -->
+<include src="assets/templates/popup.html"></include>
+<section class="section_1"  >
     <!-- Header -->
     <div id="video-bg">
       <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop">
@@ -50,21 +51,21 @@
   </div>
 
   </section>
-<section class="section_2" id="anchor2">
+<section class="section_2 " id="anchor2">
   <div class="menu_fix">
     <a href="index.html" class="logo">
       <img src="img/logo.png">
     </a>
     <div class="container">
       <ul class="menu">
-        <li><a href="#">О бренде  </a></li>
+        <li><a href="brand.html">О бренде  </a></li>
         <li><a href="#">Стать партнером </a></li>
-        <li><a href="#">Продукция</a></li>
+        <li><a href="produkt.html">Продукция</a></li>
         <li><a href="#">Гарантийная политика</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="faq.html">FAQ </a></li>
         <li><a href="#">Контакты</a></li>
-        <li><a href="#"><i class="icon-social"></i></a></li>
+        <li><a href="#"  class="open-registration" ><i class="icon-social"></i></a></li>
       </ul>
     </div>
   </div>
@@ -83,13 +84,13 @@
         </p>
       </div>
       <div class="video">
-        <i class="icon-play"></i>
+        <i class="icon-play open-video"></i>
         <img src="img/video.png">
       </div>
     </div>
   </div>
 </section>
-<section class="section_3">
+<section class="section_3 ">
   <div class="container">
     <div class="content">
       <p class="title">Честная цена </p>
@@ -98,89 +99,87 @@
     </div>
   </div>
 </section>
-<section class="section_4">
+<section class="section_4 ">
   <div class="container">
     <p class="title">Наши товары</p>
     <h3>Продукция Ti·GUAR</h3>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-1" class="slide tabs-button active">
             <img src="img/sw_1.png">
             <span class="name">Амортизаторы </span>
             <span class="bg">Амортизаторы </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-2" class="slide tabs-button">
             <img src="img/sw_2.png">
             <span class="name">Детали ходовой части </span>
             <span class="bg">Детали ходовой части </span>
+            </a>
           </div>
-        </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-3" class="slide tabs-button">
             <img src="img/sw_3.png">
             <span class="name">Фильтры </span>
             <span class="bg">Фильтры </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-4" class="slide tabs-button">
             <img src="img/sw_4.png">
             <span class="name">Тормозные диски</span>
             <span class="bg">Тормозные диски </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-5" class="slide tabs-button"="slide tab">
             <img src="img/sw_5.png">
             <span class="name">Дисковые и барабанные тормозные колодки</span>
             <span class="bg">Дисковые и барабанные тормозные колодки</span>
-          </div>
+          </a>
         </div>
-
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-6" class="slide tabs-button">
             <img src="img/sw_1.png">
             <span class="name">Амортизаторы </span>
             <span class="bg">Амортизаторы </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-7" class="slide tabs-button">
             <img src="img/sw_2.png">
             <span class="name">Детали ходовой части </span>
             <span class="bg">Детали ходовой части </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-8" class="slide tabs-button">
             <img src="img/sw_3.png">
             <span class="name">Фильтры </span>
             <span class="bg">Фильтры </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-9" class="slide tabs-button">
             <img src="img/sw_4.png">
             <span class="name">Тормозные диски</span>
             <span class="bg">Тормозные диски </span>
-          </div>
+          </a>
         </div>
         <div class="swiper-slide">
-          <div class="slide tab">
+          <a href="#item-10" class="slide tabs-button">
             <img src="img/sw_5.png">
             <span class="name">Дисковые и барабанные тормозные колодки</span>
             <span class="bg">Дисковые и барабанные тормозные колодки</span>
-          </div>
+          </a>
         </div>
-
       </div>
       <div class="swiper-scrollbar"></div>
     </div>
     <div class="tab_content">
-      <div class="tab_item">
+      <div class="tab_item active" data-id="item-1">
         <span>01</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -189,7 +188,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-2">
         <span>02</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -198,7 +197,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-3">
         <span>03</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -207,7 +206,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-4">
         <span>04</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -216,7 +215,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-5">
         <span>05</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -225,8 +224,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-6">
         <span>06</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -235,7 +233,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-7">
         <span>07</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -244,7 +242,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-8">
         <span>08</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -253,7 +251,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-9">
         <span>09</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -262,7 +260,7 @@
         </p>
         <a href="#" class="btn_red">Подробнее</a>
       </div>
-      <div class="tab_item">
+      <div class="tab_item" data-id="item-10">
         <span>10</span>
         <h4>Амортизаторы</h4>
         <p>
@@ -275,7 +273,7 @@
     <a href="#" class="about">Посмотреть все товарные группы</a>
   </div>
 </section>
-<section class="section_5">
+<section class="section_5 ">
   <div class="container">
     <p class="title">Мы в цифрах</p>
     <h3>Цифры говорят за нас</h3>
@@ -355,7 +353,7 @@
     </div>
   </div>
 </section>
-<section class="section_6">
+<section class="section_6 ">
   <div class="container">
     <div class="content">
       <p class="title">Чёткая </p>
@@ -364,7 +362,7 @@
     </div>
   </div>
 </section>
-<section class="section_7">
+<section class="section_7 ">
   <div class="container">
     <p class="title">Новости</p>
     <h3>Будь в курсе наших новинок</h3>
@@ -468,7 +466,7 @@
 <!-- section_partners -->
 <include src="assets/templates/section_partners.html"></include>
 
-<section class="section_9">
+<section class="section_9 ">
   <div class="container">
     <p class="title">FAQ</p>
     <h3>Часто задаваемые вопросы</h3>
@@ -532,6 +530,7 @@
 <script src="js/jquery.spincrement.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/jquery.responsiveTabs.min.js"></script>
+
 
 <script src="js/script.min.js"></script>
 <script src="js/home.min.js"></script>

@@ -4,11 +4,16 @@
 @import "libs/fonts";
 @import "libs/fontello";
 @import 'libs/normalize';
+@import "libs/popup";
 @import "libs/slick";
 @import "libs/jquery-ui";
 @import "libs/swiper";
 @import "libs/section_partners";
 @import "libs/map";
+@import "libs/animate";
+
+
+
 
 body {
     position: relative;
@@ -206,8 +211,8 @@ button {
     padding: 23px 15px 10px 15px;
     &:hover{
         background: none;
-        color: #ffffff;
-        border: 1px solid #ffffff;
+        color: #db1515;
+        border: 1px solid #db1515;
     }
 }
 .title{
