@@ -1,0 +1,215 @@
+.section_1{
+  padding: 22px 0 0 0;
+  .container{
+    .chapter{
+      margin: 60px 0 32px;
+    }
+    .partners_list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .partners{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto 60px;
+        max-width: 290px;
+        padding: 0 0 10px 0;
+        img{
+          width: 290px;
+          height: 387px;
+        }
+        .text{
+          position: relative;
+          margin: 24px 0 0 0;
+          &:before{
+            font-family: 'fontello';
+            font-size: 94px;
+            position: absolute;
+            z-index: -1;
+            top: 40px;
+            left: 0;
+            content: '\e801';
+            color: #dedede;
+          }
+          h5{
+            color: #181818;
+            font-family: "Gotham Pro";
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 0.48px;
+            strong{
+              color: #181818;
+              font-family: "Gotham Pro";
+              font-size: 22px;
+              letter-spacing: 0.67px;
+            }
+          }
+          p{
+            color: #181818;
+            font-family: "Gotham Pro";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            position: relative;
+            padding: 21px 0 17px 35px;
+            &:before{
+              content: '';
+              position: absolute;
+              left: 0;
+              background-image: url("../img/contacts.png");
+              background-repeat: no-repeat;
+              width: 23px;
+              height: 25px;
+            }
+            span{
+              color: #181818;
+              font-family: "Gotham Pro";
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              display: block;
+            }
+          }
+          .review{
+            color: #181818;
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            padding: 0 0 0 0;
+            margin: 0 0 24px 0;
+            &:before{
+              display: none;
+            }
+          }
+          span{
+            color: #0660b3;
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 12.48px;
+          }
+        }
+      }
+
+    }
+    .pagination{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      li{
+        a{
+          color: #181818;
+          font-family: "Gotham Pro";
+          font-size: 16px;
+          font-weight: 700;
+          padding: 2px 6px 3px 6px;
+          &.active{
+            font-family: "Gotham Pro";
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            width: 30px;
+            height: 30px;
+            background-color: #181818;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px){
+  .section_1{
+    .container{
+      .chapter{
+        margin: 60px 0 32px;
+      }
+      .partners_list{
+        .partners{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          margin: 0 auto 60px;
+          max-width: 600px;
+          padding: 0 0 10px 0;
+          width: 50%;
+          justify-content: space-between;
+          img{
+            width: 231px;
+            height: 308px;
+          }
+          .text{
+            position: relative;
+            margin: 24px 0 0 0;
+            width: 50%;
+            h5{
+              color: #181818;
+              font-family: "Gotham Pro";
+              font-size: 24px;
+              font-weight: 400;
+              letter-spacing: 0.48px;
+              strong{
+                color: #181818;
+                font-family: "Gotham Pro";
+                font-size: 22px;
+                letter-spacing: 0.67px;
+              }
+            }
+            p{
+              color: #181818;
+              font-family: "Gotham Pro";
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 18px;
+              position: relative;
+              padding: 21px 0 17px 35px;
+              &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                background-image: url("../img/contacts.png");
+                background-repeat: no-repeat;
+                width: 23px;
+                height: 25px;
+              }
+              span{
+                color: #181818;
+                font-family: "Gotham Pro";
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18px;
+                display: block;
+              }
+            }
+            .review{
+              color: #181818;
+              font-family: "Gotham Pro";
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 24px;
+              padding: 0 0 0 0;
+              margin: 0 0 24px 0;
+              &:before{
+                display: none;
+              }
+            }
+            span{
+              color: #0660b3;
+              font-family: "Gotham Pro";
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 12.48px;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
