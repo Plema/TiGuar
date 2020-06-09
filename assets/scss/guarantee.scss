@@ -1,0 +1,142 @@
+.section_1{
+  padding: 34px 0 140px 0;
+
+  .container{
+    .scroll{
+      position: relative;
+      .button_slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+        transform: translate(0px, 0px)rotate(0deg);
+        button{
+          width: 50px;
+          height: 49px;
+          background-color: #f6f6f6;
+          .icon-next{
+            &:before{
+              transform: rotate(180deg);
+            }
+          }
+          i{
+            &:before{
+              color: #0660b3;
+            }
+          }
+        }
+      }
+      .text{
+        margin: 0 auto 0;
+        display: block;
+        padding: 81px  0 0 16px;
+        position: relative;
+        width: 1200px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        table{
+          margin: 0 0 48px 0;
+          thead{
+            border: 2px solid #ffffff;
+            background-color: #db1515;
+            tr{
+              th{
+                &:nth-child(1){
+                  padding: 45px 10px 45px 11px;
+                }
+                &:nth-child(2){
+                  padding: 21px 10px 21px 11px;
+                }
+                &:nth-child(3){
+                  padding: 45px 10px 45px 11px;
+                }
+
+                p{
+                  color: #ffffff;
+                  font-family: "Gotham Pro";
+                  font-size: 18px;
+                  font-weight: 500;
+                }
+              }
+              &:nth-child(2){
+                th{
+                  &:nth-child(1){
+                    padding: 8px 2px 8px 2px;
+                  }
+                  &:nth-child(2){
+                    padding: 8px 2px 8px 2px;
+                  }
+                }
+              }
+            }
+          }
+          tbody{
+            tr{
+              td{
+                padding: 20px;
+                a{
+                  color: #0660b3;
+                  font-family: "Gotham Pro";
+                  font-size: 16px;
+                  font-weight: 400;
+                  text-decoration: underline;
+                }
+                p{
+                  color: #181818;
+                  font-family: "Gotham Pro";
+                  font-size: 16px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .bottom{
+      overflow: hidden;
+      p{
+        overflow: hidden;
+        margin: 0 0 23px 0;
+        color: #181818;
+        font-family: "Gotham Pro";
+        font-size: 16px;
+        font-weight: 400;
+        strong{
+          font-family: 'GothamPro-Medium';
+          font-weight: 500;
+          font-size: 16px;
+          color: #181818;
+        }
+      }
+      ul{
+        overflow: hidden;
+        li{
+          color: #181818;
+          font-family: "Gotham Pro";
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 1280px) {
+  .section_1{
+    padding: 34px 0 0 0;
+    .container{
+      .scroll{
+        .text{
+          .button_slide{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

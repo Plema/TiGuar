@@ -1,0 +1,114 @@
+.section_1{
+  position: relative;
+  background-image: url(../img/bg_mob.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 126px 0 134px 0;
+  .container{
+    text-align: center;
+    h3{
+      font-family: 'Gotham Pro';
+      font-size: 129px;
+      font-weight: 700;
+      line-height: 141.58px;
+      color: #fff;
+    }
+    span{
+      font-family: 'Gotham Pro';
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #db1515;
+      display: block;
+      padding: 0 0 24px 0;
+    }
+    p{
+      color: #ffffff;
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .linc{
+      display: block;
+      margin: 20px 0 0;
+      p{
+        color: #ffffff;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        a{
+          color: #0660b3;
+          text-decoration: underline;
+          font-size: 14px;
+        }
+        .linc_index{
+          color: #db1515;
+          text-decoration: underline;
+          font-size: 14px;
+        }
+
+      }
+
+    }
+  }
+}
+@media (min-width: 1024px){
+
+  .section_1{
+    position: relative;
+    background-image: url(../img/bg_desc.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 126px 0 134px 0;
+    height: 100vh;
+    .container{
+      text-align: center;
+      h3{
+        font-size: 358px;
+        line-height: 317.58px;
+      }
+      span{
+        font-size: 36px;
+      }
+      p{
+        color: #ffffff;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .linc{
+        display: block;
+        margin: 20px 0 0;
+        p{
+          font-size: 16px;
+          a{
+            font-size: 16px;
+          }
+          .linc_index{
+            font-size: 16px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+@media (min-width: 1280px){
+  .section_1{
+
+    .container{
+      text-align: center;
+      h3{
+        font-size:458px;
+        line-height: 422.58px;
+      }
+
+    }
+  }
+}
