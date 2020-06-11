@@ -4,6 +4,7 @@
   .container{
     .scroll{
       position: relative;
+      overflow: auto;
       .button_slide{
         position: absolute;
         top: 0;

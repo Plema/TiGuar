@@ -12,7 +12,7 @@
 @import "libs/map";
 @import "libs/animate";
 @import "libs/fullpage";
-
+@import "libs/responsive-tabs";
 
 
 body {
@@ -282,6 +282,69 @@ button {
         }
     }
 }
+.slider_action{
+    .slick-arrow{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: 0.5s;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            &:before{
+                color: #0660b3;
+            }
+        }
+        &:before{
+            content: '\e868';
+            font-family: 'fontello';
+            font-size: 15px;
+            color: #727272;
+        }
+        &.next{
+            right: 50%;
+            transform: translate(150%, -2px);
+        }
+        &.prev{
+            left: 50%;
+            transform: translate(-150%, -2px)rotate(180deg);
+        }
+    }
+}
+.slider_new{
+    .slick-arrow{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: 0.5s;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            &:before{
+                color: #0660b3;
+            }
+        }
+        &:before{
+            content: '\e868';
+            font-family: 'fontello';
+            font-size: 15px;
+            color: #727272;
+        }
+        &.next{
+            right: 50%;
+            transform: translate(150%, -2px);
+        }
+        &.prev{
+            left: 50%;
+            transform: translate(-150%, -2px)rotate(180deg);
+        }
+    }
+}
+
 .button_slide{
     position: absolute;
     bottom: -24px;

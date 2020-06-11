@@ -2,9 +2,794 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Личный кабинет</title>
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/cab.min.css" data-inprogress="">
 </head>
 <body>
+<!-- Popup -->
+<include src="assets/templates/popup.html"></include>
 
+<!-- Header -->
+<include src="assets/templates/header.html"></include>
+
+<section class="section_1">
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li> / </li>
+            <li class="active"><a href="javascript:void(0)">Личный кабинет</a></li>
+        </ul>
+        <div class="tabs-box">
+            <ul class="tabs">
+                <li class="active" rel="tab1">Материалы для обучения</li>
+                <li rel="tab2">Программы сотрудничества и договора</li>
+                <li rel="tab3">Маркетинговые материалы</li>
+                <li rel="tab4" class="tab_last">Акции, новинки</li>
+            </ul>
+            <div class="tab_container">
+                <h3 class=" tab_accordion" rel="tab1">Материалы для обучения</h3>
+                <div id="tab1" class="tab_content" style="display: block;">
+                   <h3>Материалы</h3>
+                    <p>Обучение - программы сотрудничества Ti•Guar.pdf</p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+                    <h3>Видео</h3>
+                    <div class="video_block">
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="tab_accordion" rel="tab2">Программы сотрудничества и договора</h3>
+                <div id="tab2" class="tab_content" style="display: none;">
+                    <h3>Материалы</h3>
+                    <p>Обучение - программы сотрудничества Ti•Guar.pdf</p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение Дилерства 2019 Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение по Партнёрской программе + и VIP 2019 Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение по сертификации СТО и Магазина 2019 Ti•Guar.docx Ti•Guar.pdf</p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Договор Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <h3>Видео</h3>
+                    <div class="video_block">
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="tab_accordion" rel="tab3">Маркетинговые материалы</h3>
+                <div id="tab3" class="tab_content" style="display: none;">
+                    <h3>Материалы</h3>
+                    <p>Обучение - программы сотрудничества Ti•Guar.pdf</p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение Дилерства 2019 Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение по Партнёрской программе + и VIP 2019 Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Положение по сертификации СТО и Магазина 2019 Ti•Guar.docx Ti•Guar.pdf</p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <p>Договор Ti•Guar.docx </p>
+                    <div class="linc">
+                        <a href="#">Скачать </a>
+                        <a href="#">Просмотреть</a>
+                    </div>
+
+                    <h3>Видео</h3>
+                    <div class="video_block">
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="tab_accordion" rel="tab4">Акции, новинки</h3>
+                <div id="tab4" class="tab_content" style="display: none;">
+                   <h3>Акции</h3>
+                    <div class="slider_action">
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="img/action_1.png">
+                                        <span>09.05.2020г</span>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Неделя бренда General Motors</h4>
+                                        <p>12% на все запчасти для автомобилей марки General Motors;</p>
+                                        <p>10% на все оригинальные масла General Motors;</p>
+                                        <p>10% на все услуги по ремонту атомобилей марки  General Motors.</p>
+                                        <span>Действует до 15.05.2020г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Новинки</h3>
+                    <div class="slider_new">
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                                <div class="box">
+                                    <img src="img/action_2.png">
+                                    <p>
+                                        Теперь вы у нас можете  приобрести шины и диски
+                                    </p>
+                                    <a href="javascript:void(0)" class="open-call">Узнать у менеджера подробности</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Видео</h3>
+                    <div class="video_block">
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                        <div class="video_box">
+                            <p>Название видео в одну или две строчки</p>
+                            <div class="video">
+                                <i class="icon-play open-video"></i>
+                                <img src="img/video.png">
+                            </div>
+                            <div class="linc">
+                                <a href="#">Скачать </a>
+                                <a href="#">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- конец .tab_container -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<include src="assets/templates/footer.html"></include>
+<script src="js/jquery.min.js"></script>
+<script src="js/jcf.min.js"></script>
+
+<script src="js/slick.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/cab.min.js"></script>
+<script>
+</script>
 </body>
 </html>
