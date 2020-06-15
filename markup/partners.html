@@ -79,7 +79,11 @@
                </ul>
            </div>
        </div>
-
+      <ul class="leng_fix">
+        <li><a class="active" href="#">Рус</a></li>
+        <li>-</li>
+        <li><a href="#">Eng</a></li>
+    </ul>
 </header>
 <section class="section_1">
     <div class="container">
@@ -211,7 +215,81 @@
         </ul>
     </div>
 </section>
+<!-- map -->
+<section class="section_10 ">
+    <div class="container">
+        <div class="top">
+            <p class="title">Заполни заявку, чтобы</p>
+            <h3>Стать партнером</h3>
+            <form>
+                <div class="input_box">
+                    <label>Ваше имя*</label>
+                    <input type="text">
+                </div>
+                <div class="input_box">
+                    <label>Название компании</label>
+                    <input type="text">
+                </div>
+                <div class="input_box">
+                    <label>Ваш телефон*</label>
+                    <input type="tel" class="phone_mask">
+                </div>
+                <div class="input_box">
+                    <label>Ваша почта*</label>
+                    <input type="text">
+                </div>
+                <button class="btn_form">Отправить</button>
+                <div class="form_radio radio1">
+                    <input type="radio" id="radio_1" name="card">
+                    <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                        персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                </div>
+            </form>
 
+        </div>
+
+        <div class="bottom">
+            <p class="title">Контакты</p>
+            <h3>Наши точки продаж</h3>
+            <p class="fix">Создан для<span>суровых дорог России</span></p>
+            <div class="box">
+                <div class="map_filter">
+                    <div class="filter">
+                        <a class="filter-open" href="javascript:void(0)"><span><b>Дилеры</b> <i class="icon-next"></i></span></a>
+                        <ul id="pp_offers_list_1" class="pp_offers_list_1">
+                            <li class="tab-button activ"><a href="#item-11">Дилеры</a></li>
+                            <li class="tab-button "><a href="#item-12">Сертифицированные СТО</a></li>
+                            <li class="tab-button"><a href="#item-13">Сертифицированные магазины автозапчастей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map_content">
+                    <div class="tab-content activ" data-id="item-11">
+
+                    </div>
+                    <div class="tab-content" data-id="item-12">
+
+                    </div>
+                    <div class="tab-content" data-id="item-13">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <div class="main-addresses__item_1" data-coord="[50.44936227, 30.50295237 ]"></div>
+                <div class="main-addresses__item_1" data-coord="[50.44760855, 30.51187877]"></div>
+
+                <div class="main-addresses__item_2" data-coord="[50.44015449, 30.50913218]"></div>
+
+                <div class="main-addresses__item_3" data-coord="[50.43620774, 30.52286509]"></div>
+
+                <div id="myMap" style="width: 1280px; height: 468px"></div>
+            </div>
+            </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -256,7 +334,7 @@
                           <input type="text" placeholder="Название компании">
                       </div>
                       <div class="input_box">
-                          <input type="text" placeholder="Ваш телефон*">
+                          <input type="tel" class="phone_mask" placeholder="Ваш телефон*">
                       </div>
                   </div>
                  <div class="box">
@@ -264,17 +342,23 @@
                          <textarea placeholder="Текст сообщения"></textarea>
                      </div>
                      <button class="btn_form">Отправить</button>
-                     <p class="about">
-                         Нажимая на кнопку, вы даете согласие на обработку своих
-                         персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-                     </p>
+                     <div class="form_radio radio1">
+                         <input type="radio" id="radio_1" name="card">
+                         <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                             персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                     </div>
                  </div>
               </form>
           </div>
       </div>
 </footer>
-
-
+<script src="js/jquery.min.js"></script>
+<script src="js/jcf.min.js"></script>
+<script src="js/jcf.select.min.js"></script>
+<script src="js/jcf.textarea.min.js"></script>
+<script src="js/jcf.radio.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jcf.number.min.js"></script>
 <script src="js/script.min.js"></script>
 
 <script>

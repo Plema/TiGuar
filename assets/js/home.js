@@ -156,18 +156,18 @@ $(document).ready(function(){
     $( function() {
         $( "#tabs" ).tabs();
     } );
-    //$('#tab').change(function() {
-    //    value = $(this).find('option:selected').val();
-    //
-    //    $('div[id^="test_hide"]').hide();
-    //    $('#test_hide'+value).show();
-    //});
+    $('#tab').change(function() {
+        value = $(this).find('option:selected').val();
+
+        $('div[id^="test_hide"]').hide();
+        $('#test_hide'+value).show();
+    });
     $(function () {
 
         var show = true;
         var countbox = ".benefits__inner";
         $(window).on("scroll load resize", function () {
-            //if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
             var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
             var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
             var w_height = $(window).height(); // Высота окна браузера
@@ -182,7 +182,7 @@ $(document).ready(function(){
                 });
 
                 show = false;
-                setTimeout(ovalIconInit1(), 1500);
+                setTimeout(ovalIconInit1(), 2000);
             }
         });
 
@@ -268,54 +268,7 @@ $(document).ready(function(){
         $(this).addClass('h');
     });
 
-    $(".partners_filter .filter-open").on("click",function(){
-        $(this).next().addClass("active")
-    });
-    $("#pp_offers_list li").on("click",function(){
-            $("#pp_offers_list li").removeClass("active"),
-            $(this).addClass("active"),
-            $(this).parent("#pp_offers_list").removeClass("active"),
-            $(".filter-open").find("span b").text($(this).find("a").text())
-    });
 
-    $(".map_filter .filter-open").on("click",function(){
-        $(this).next().addClass("active")
-    });
-    $("#pp_offers_list_1 li").on("click",function(){
-        $("#pp_offers_list_1 li").removeClass("active"),
-            $(this).addClass("active"),
-            $(this).parent("#pp_offers_list_1").removeClass("active"),
-            $(".filter-open").find("span b").text($(this).find("a").text())
-    });
-
-    $(".section_8 .tabs-button a").click(function(e) {
-        $("div [data-id]").removeClass("active");
-        $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
-        e.preventDefault();
-    });
-    $(".section_8 .tabs-button").click(function(e) {
-        e.preventDefault();
-        $(".tabs-button").removeClass('active');
-        $(this).addClass('active');
-    });
-
-    $(".section_10 .tab-button a").click(function(e) {
-        $("div [data-id]").removeClass("active");
-        $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("active");
-        e.preventDefault();
-    });
-    $(".section_10 .tab-button").click(function(e) {
-        e.preventDefault();
-        $(".tab-button").removeClass('active');
-        $(this).addClass('active');
-    });
-    var distance = 50,
-        box = $('.filter');
-    $('button').on('click', function() {
-        box.stop().animate({
-            scrollTop: '+=' + (distance * $(this).data('factor'))
-        });
-    });
 
 
     $('.scrollto').on('click', function() {
@@ -356,25 +309,7 @@ $(document).ready(function() {
     });
 
 });
-$(document).ready(function() {
 
-    var element = $(".leng_fix");
-    var height_el = element.offset().top;
-    $(window).scroll(function() {
-
-        if($(window).scrollTop() > height_el) {
-
-            element.addClass("fixed");
-
-        } else {
-
-            element.removeClass("fixed");
-
-        }
-
-    });
-
-});
 
 $(document).ready(function(){
     var distance = 50,

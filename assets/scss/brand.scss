@@ -25,6 +25,14 @@
           height: 69px;
           background-color: #db1515;
           border-radius: 50%;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover{
+            background-color: #fff;
+            &:before{
+              color: #db1515;
+            }
+          }
           &:before{
             top: 50%;
             transform: translate(-50%,-50%);

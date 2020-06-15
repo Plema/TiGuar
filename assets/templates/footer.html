@@ -38,7 +38,7 @@
                           <input type="text" placeholder="Название компании">
                       </div>
                       <div class="input_box">
-                          <input type="text" placeholder="Ваш телефон*">
+                          <input type="tel" class="phone_mask" placeholder="Ваш телефон*">
                       </div>
                   </div>
                  <div class="box">
@@ -46,10 +46,11 @@
                          <textarea placeholder="Текст сообщения"></textarea>
                      </div>
                      <button class="btn_form">Отправить</button>
-                     <p class="about">
-                         Нажимая на кнопку, вы даете согласие на обработку своих
-                         персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-                     </p>
+                     <div class="form_radio radio1">
+                         <input type="radio" id="radio_1" name="card">
+                         <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                             персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                     </div>
                  </div>
               </form>
           </div>

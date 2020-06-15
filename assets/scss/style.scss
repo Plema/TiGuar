@@ -184,8 +184,8 @@ button {
     text-align: center;
     border: none;
     &:hover{
-        background-color: #db1515;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #db1515;
     }
 }
 .btn_red{
@@ -344,7 +344,48 @@ button {
         }
     }
 }
+.leng_fix{
+    position: absolute;
+    top: 150px;
 
+    justify-content: space-between;
+    flex-direction: column;
+    width: 41px;
+    height: 141px;
+    background-color: #181818;
+    padding: 30px 0 30px 0px;
+    display: none;
+    &.fixed{
+        position: fixed;
+        top:300px;
+        z-index: 88;
+        display: flex;
+    }
+    li{
+        transform: translate(0px, 0px)rotate(-90deg);
+        display: table;
+        a{
+            color: #fefefe;
+            font-size: 14px;
+            line-height: 12.48px;
+            font-family: "Gotham Pro";
+            font-weight: 400;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                color: #0660b3;
+                transition: 0.5s;
+            }
+            &.active{
+                font-family: "Gotham Pro";
+                font-weight: 700;
+                color: #fefefe;
+                font-size: 14px;
+                line-height: 12.48px;
+            }
+        }
+    }
+}
 .button_slide{
     position: absolute;
     bottom: -24px;

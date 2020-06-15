@@ -41,23 +41,57 @@
             color: #727272;
           }
         }
-      }
-      .about{
-        color: #ffffff;
-        font-family: "Gotham Pro";
-        font-size: 12px;
-        font-weight: 300;
-        padding: 41px 15px 0px 21px;
-        line-height: 15px;
-        a{
-          color: #0660b3;
-          text-decoration: underline;
-          font-family: "Gotham Pro";
-          font-size: 12px;
-          font-weight: 300;
-          display: block;
+        .form_radio{
+          position: relative;
+          label{
+            color: #ffffff;
+            font-family: "Gotham Pro";
+            font-size: 12px;
+            font-weight: 300;
+            padding: 41px 15px 0px 21px;
+            line-height: 15px;
+            a{
+              color: #0660b3;
+              text-decoration: underline;
+              font-family: "Gotham Pro";
+              font-size: 12px;
+              font-weight: 300;
+              display: block;
+            }
+          }
+          .jcf-checked {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #db1515;
+            background-color: rgba(255,255,255,0.9);
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;
+            span {
+              width: 8px;
+              height: 8px;
+              background-color: #db1515;
+              border-radius: 50%;
+              position: absolute;
+              top: 50%;
+              transform: translate(2px, -50%);
+            }
+          }
+          .jcf-unchecked {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #db1515;
+            background-color: rgba(255,255,255,0.9);
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;
+          }
         }
       }
+
+
     }
     .bottom{
       padding: 174px 0 0 0;
@@ -98,21 +132,36 @@
               font-size: 16px;
               width: 291px;
               min-height: 68px;
-              padding: 22px 10px;
+              padding: 23px 43px 15px 21px;
               margin: 0 auto;
               border-radius: 34px;
               background-color: #db1515;
               transition: all 0.5s;
-              text-align: center;
               display: block;
               color: #ffffff;
               font-family: "Gotham Pro";
-              font-size: 16px;
+              position: relative;
               font-weight: 400;
+              span{
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                width: 90%;
+                i{
+                  &:before{
+                    right: 0;
+                    position: absolute;
+                    font-size: 9px;
+                    top: 50%;
+                    transform: translate(-24px, -50%)rotate(90deg);
+                  }
+                }
+              }
             }
             #pp_offers_list_1{
               display: none;
-              &.active{
+              &.activ{
                 display: block;
                 position: absolute;
                 left: 50%;
@@ -153,12 +202,18 @@
       margin: 12px 0 40px;
     }
     .map{
-      width: 290px;
       height: 468px;
-      background-image: url("../img/map_mob.png");
       background-repeat: no-repeat;
       background-size: contain;
       margin: 0 auto;
+      iframe{
+        width: 100%;
+      }
+      .main-addresses__item{
+        background-image:url("../img/marc_1.png");
+        background-repeat: no-repeat;
+
+      }
     }
   }
 }
@@ -261,6 +316,7 @@
           .map_filter{
             height: fit-content;
             padding: 0 0 40px 0;
+            width: 100%;
             .button_slide{
               display: block;
               position: absolute;
@@ -268,6 +324,7 @@
             .filter{
               position: relative;
               overflow: hidden;
+              width: 100%;
               .filter-open{
                 display: none;
               }
@@ -298,7 +355,7 @@
                     left: 50%;
                     width: 100%;
                   }
-                  &.active{
+                  &.activ{
                     background-color: #db1515;
                   }
                 }
@@ -320,7 +377,7 @@
           max-width: 1280px;
           width: auto;
           height: 468px;
-          background-image: url("../img/map.png");
+
           background-repeat: no-repeat;
           background-size: contain;
           margin: 0 auto;
@@ -418,7 +475,7 @@
               font-family: "Gotham Pro";
               font-size: 16px;
               font-weight: 400;
-              &.active{
+              &.activ{
                 background-color: #db1515;
               }
 

@@ -14,18 +14,20 @@
                 </div>
                 <div class="input_box">
                     <label>Ваш телефон*</label>
-                    <input type="text">
+                    <input type="tel" class="phone_mask">
                 </div>
                 <div class="input_box">
                     <label>Ваша почта*</label>
                     <input type="text">
                 </div>
                 <button class="btn_form">Отправить</button>
+                <div class="form_radio radio1">
+                    <input type="radio" id="radio_1" name="card">
+                    <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                        персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                </div>
             </form>
-            <p class="about">
-                Нажимая на кнопку, вы даете согласие на обработку своих
-                персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-            </p>
+
         </div>
 
         <div class="bottom">
@@ -37,14 +39,14 @@
                     <div class="filter">
                         <a class="filter-open" href="javascript:void(0)"><span><b>Дилеры</b> <i class="icon-next"></i></span></a>
                         <ul id="pp_offers_list_1" class="pp_offers_list_1">
-                            <li class="tab-button active"><a href="#item-11">Дилеры</a></li>
+                            <li class="tab-button activ"><a href="#item-11">Дилеры</a></li>
                             <li class="tab-button "><a href="#item-12" >Сертифицированные СТО</a></li>
                             <li class="tab-button"><a href="#item-13" >Сертифицированные магазины автозапчастей</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="map_content">
-                    <div class="tab-content active" data-id="item-11">
+                    <div class="tab-content activ" data-id="item-11">
 
                     </div>
                     <div class="tab-content" data-id="item-12">
@@ -57,8 +59,15 @@
             </div>
 
             <div class="map">
+                <div class="main-addresses__item_1" data-coord="[50.44936227, 30.50295237 ]"></div>
+                <div class="main-addresses__item_1" data-coord="[50.44760855, 30.51187877]"></div>
 
+                <div class="main-addresses__item_2" data-coord="[50.44015449, 30.50913218]"></div>
+
+                <div class="main-addresses__item_3" data-coord="[50.43620774, 30.52286509]"></div>
+
+                <div id="myMap" style="width: 1280px; height: 468px"></div>
             </div>
-        </div>
+            </div>
     </div>
 </section>

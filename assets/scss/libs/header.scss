@@ -219,6 +219,16 @@ header{
               display: block;
               margin: 0 24px 0 0;
               color: #fff;
+              cursor: pointer;
+              transition: 0.5s;
+              &:hover{
+                i{
+                  &:before{
+                    color:  #db1515;
+                    transition: 0.5s;
+                  }
+                }
+              }
               &.phone{
                 padding: 5px 0px 0 35px;
                 letter-spacing: 0.6px;
@@ -226,6 +236,14 @@ header{
               }
               .icon-communications{
                 background-color: #ffffff;
+                transition: 0.5s;
+                &:hover{
+                  background-color: #db1515;
+                  transition: 0.5s;
+                  &:before{
+                    color: #ffffff;
+                  }
+                }
                 &:before{
                   color: #db1515;
                 }
@@ -240,10 +258,18 @@ header{
                 cursor: pointer;
                 text-align: center;
                 top: -5px;
+                transition: 0.5s;
                 &:before{
                   color: #ffffff;
                   font-size: 15px;
                   line-height: 29px;
+                }
+                &:hover{
+                  background-color: #ffffff;
+                    &:before{
+                      color:  #db1515;
+                      transition: 0.5s;
+                  }
                 }
               }
             }
@@ -260,13 +286,13 @@ header{
       display: none;
     }
     .logo{
-      width: 551px;
+      width: 529px;
       height: 113px;
       img{
         top: 36px;
         right: 24px;
-        width: 207px;
-        height: 43px;
+        width: 184px;
+        height: 41px;
       }
     }
     .dasctop{
@@ -280,7 +306,7 @@ header{
         .menu{
           z-index: 1;
           width: 75%;
-          padding: 0 12px 0 275px;
+          padding: 0 20px 0 237px;
           display: flex;
           justify-content: space-between;
           li{
@@ -300,7 +326,7 @@ header{
           justify-content: space-between;
           margin: 0;
           width: 25%;
-          padding: 0 0px 0 26px;
+          padding: 0 7px 0 17px;
           li{
             a{
               font-family: 'Gotham Pro';

@@ -11,7 +11,64 @@
 </head>
 <body>
 
+<!-- Popup -->
+<div class="overlay-registration registrationPopup animated ">
+    <div class="close"></div>
+    <div class="registration__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Вход</h3>
+            <p>
+                Укажите ваш номер телефона и пароль для
+                входа в личный кабинет
+            </p>
+           <form>
+               <div class="input_box">
+                   <input placeholder="Ваш телефон" class="phone_mask">
+               </div>
+               <div class="input_box">
+                   <input placeholder="Введите пароль">
+               </div>
+               <a href="#" class="btn_red closeBtn">войти</a>
+           </form>
+        </div>
+    </div>
+</div>
 
+<div class="overlay-call callPopup animated ">
+    <div class="close"></div>
+    <div class="call__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Введите данные для
+                заказа обратного звонка</h3>
+            <form>
+                <div class="input_box">
+                    <input placeholder="Введите имя">
+                </div>
+                <div class="input_box">
+                    <input placeholder="Ваш телефон" class="phone_mask">
+                </div>
+                <a href="#" class="btn_red closeBtn">отправить</a>
+            </form>
+            <span class="valid">
+                Благодарим за заявку! Наш менежер свяжется с вами в ближайшее время
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-video videoPopup animated ">
+    <div class="close"></div>
+    <div class="video__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <!--<video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop">-->
+                <!--<source src="img/popup_vi.mp4" type="video/mp4">-->
+            <!--</video>-->
+        </div>
+    </div>
+</div>
 <!-- Header -->
 <header class="header">
         <a href="index.html" class="logo">
@@ -79,7 +136,11 @@
                </ul>
            </div>
        </div>
-
+      <ul class="leng_fix">
+        <li><a class="active" href="#">Рус</a></li>
+        <li>-</li>
+        <li><a href="#">Eng</a></li>
+    </ul>
 </header>
 
 <section class="section_1">
@@ -94,7 +155,7 @@
             <img src="img/prod_24.png">
             <img src="img/prod_25.png">
             <div class="video">
-                <i class="icon-play"></i>
+                <i class="icon-play open-video"></i>
                 <img src="img/video.png">
             </div>
         </div>
@@ -171,7 +232,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-2">
@@ -182,7 +243,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-3">
@@ -193,7 +254,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-4">
@@ -204,7 +265,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-5">
@@ -215,7 +276,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-6">
@@ -226,7 +287,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-7">
@@ -237,7 +298,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-8">
@@ -248,7 +309,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-9">
@@ -259,7 +320,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
                 <div class="tabs-content" data-id="item-10">
@@ -270,7 +331,7 @@
                         <p>
                             Широчайший ассортимент автозапчастей. Продукция представлена на все популярные марки и модели авто.
                         </p>
-                        <a href="#" class="linc">Мы рекомендуем</a>
+                        <a href="partners.html" class="linc">Мы рекомендуем</a>
                     </div>
                 </div>
 
@@ -307,18 +368,20 @@
                 </div>
                 <div class="input_box">
                     <label>Ваш телефон*</label>
-                    <input type="text">
+                    <input type="tel" class="phone_mask">
                 </div>
                 <div class="input_box">
                     <label>Ваша почта*</label>
                     <input type="text">
                 </div>
                 <button class="btn_form">Отправить</button>
+                <div class="form_radio radio1">
+                    <input type="radio" id="radio_1" name="card">
+                    <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                        персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                </div>
             </form>
-            <p class="about">
-                Нажимая на кнопку, вы даете согласие на обработку своих
-                персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-            </p>
+
         </div>
 
         <div class="bottom">
@@ -330,14 +393,14 @@
                     <div class="filter">
                         <a class="filter-open" href="javascript:void(0)"><span><b>Дилеры</b> <i class="icon-next"></i></span></a>
                         <ul id="pp_offers_list_1" class="pp_offers_list_1">
-                            <li class="tab-button active"><a href="#item-11">Дилеры</a></li>
+                            <li class="tab-button activ"><a href="#item-11">Дилеры</a></li>
                             <li class="tab-button "><a href="#item-12">Сертифицированные СТО</a></li>
                             <li class="tab-button"><a href="#item-13">Сертифицированные магазины автозапчастей</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="map_content">
-                    <div class="tab-content active" data-id="item-11">
+                    <div class="tab-content activ" data-id="item-11">
 
                     </div>
                     <div class="tab-content" data-id="item-12">
@@ -350,9 +413,16 @@
             </div>
 
             <div class="map">
+                <div class="main-addresses__item_1" data-coord="[50.44936227, 30.50295237 ]"></div>
+                <div class="main-addresses__item_1" data-coord="[50.44760855, 30.51187877]"></div>
 
+                <div class="main-addresses__item_2" data-coord="[50.44015449, 30.50913218]"></div>
+
+                <div class="main-addresses__item_3" data-coord="[50.43620774, 30.52286509]"></div>
+
+                <div id="myMap" style="width: 1280px; height: 468px"></div>
             </div>
-        </div>
+            </div>
     </div>
 </section>
 
@@ -397,7 +467,7 @@
                           <input type="text" placeholder="Название компании">
                       </div>
                       <div class="input_box">
-                          <input type="text" placeholder="Ваш телефон*">
+                          <input type="tel" class="phone_mask" placeholder="Ваш телефон*">
                       </div>
                   </div>
                  <div class="box">
@@ -405,10 +475,11 @@
                          <textarea placeholder="Текст сообщения"></textarea>
                      </div>
                      <button class="btn_form">Отправить</button>
-                     <p class="about">
-                         Нажимая на кнопку, вы даете согласие на обработку своих
-                         персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-                     </p>
+                     <div class="form_radio radio1">
+                         <input type="radio" id="radio_1" name="card">
+                         <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                             персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                     </div>
                  </div>
               </form>
           </div>
@@ -426,9 +497,9 @@
 <script src="js/jquery.spincrement.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/jquery.responsiveTabs.min.js"></script>
-
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/script.min.js"></script>
-<script src="js/home.min.js"></script>
+<script src="js/brand.min.js"></script>
 <script>
 </script>
 </body>

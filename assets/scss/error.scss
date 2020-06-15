@@ -55,7 +55,7 @@
     }
   }
 }
-@media (min-width: 1024px){
+@media (min-width: 480px){
 
   .section_1{
     position: relative;
@@ -65,6 +65,11 @@
     background-size: cover;
     padding: 126px 0 134px 0;
     height: 100vh;
+  }
+}
+@media (min-width: 1024px){
+
+  .section_1{
     .container{
       text-align: center;
       h3{
@@ -101,12 +106,18 @@
 }
 @media (min-width: 1280px){
   .section_1{
-
+    padding: 173px 0 134px;
     .container{
       text-align: center;
       h3{
         font-size:458px;
         line-height: 422.58px;
+      }
+      span{
+        padding: 0px 0 40px;
+      }
+      p{
+        font-size: 16px;
       }
 
     }

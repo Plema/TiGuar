@@ -79,7 +79,11 @@
                </ul>
            </div>
        </div>
-
+      <ul class="leng_fix">
+        <li><a class="active" href="#">Рус</a></li>
+        <li>-</li>
+        <li><a href="#">Eng</a></li>
+    </ul>
 </header>
 <section class="section_1">
     <div class="container">
@@ -176,7 +180,7 @@
                           <input type="text" placeholder="Название компании">
                       </div>
                       <div class="input_box">
-                          <input type="text" placeholder="Ваш телефон*">
+                          <input type="tel" class="phone_mask" placeholder="Ваш телефон*">
                       </div>
                   </div>
                  <div class="box">
@@ -184,10 +188,11 @@
                          <textarea placeholder="Текст сообщения"></textarea>
                      </div>
                      <button class="btn_form">Отправить</button>
-                     <p class="about">
-                         Нажимая на кнопку, вы даете согласие на обработку своих
-                         персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a>
-                     </p>
+                     <div class="form_radio radio1">
+                         <input type="radio" id="radio_1" name="card">
+                         <label for="radio_1"> Нажимая на кнопку, вы даете согласие на обработку своих
+                             персональных данных и соглашаетесь с <a href="#">Политикой Конфиденциальности</a></label>
+                     </div>
                  </div>
               </form>
           </div>
@@ -198,6 +203,11 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.responsiveTabs.min.js"></script>
     <script src="js/jcf.min.js"></script>
+    <script src="js/jcf.select.min.js"></script>
+    <script src="js/jcf.textarea.min.js"></script>
+    <script src="js/jcf.radio.min.js"></script>
+    <script src="js/jcf.number.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/script.min.js"></script>
     <script src="js/faq.min.js"></script>
 <script>

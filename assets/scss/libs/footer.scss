@@ -204,20 +204,55 @@
                color: #727272;
              }
            }
-           .about{
-             color: #ffffff;
-             font-family: "Gotham Pro";
-             font-size: 12px;
-             font-weight: 300;
-             padding: 41px 15px 0px 21px;
-             line-height: 15px;
-             a{
-               color: #0660b3;
-               text-decoration: underline;
+           .btn_form{
+             margin: 0 0 38px 0;
+           }
+           .form_radio{
+             position: relative;
+             label{
+               color: #ffffff;
                font-family: "Gotham Pro";
                font-size: 12px;
                font-weight: 300;
+               padding: 41px 15px 0px 21px;
+               line-height: 15px;
+               a{
+                 color: #0660b3;
+                 text-decoration: underline;
+                 font-family: "Gotham Pro";
+                 font-size: 12px;
+                 font-weight: 300;
+                 display: block;
+               }
+             }
+             .jcf-checked {
+               width: 14px;
+               height: 14px;
+               border: 1px solid #db1515;
+               background-color: rgba(255,255,255,0.9);
                display: block;
+               border-radius: 50%;
+               position: absolute;
+               top: 4px;
+               span {
+                 width: 8px;
+                 height: 8px;
+                 background-color: #db1515;
+                 border-radius: 50%;
+                 position: absolute;
+                 top: 50%;
+                 transform: translate(2px, -50%);
+               }
+             }
+             .jcf-unchecked {
+               width: 14px;
+               height: 14px;
+               border: 1px solid #db1515;
+               background-color: rgba(255,255,255,0.9);
+               display: block;
+               border-radius: 50%;
+               position: absolute;
+               top: 4px;
              }
            }
          }
@@ -295,7 +330,11 @@
           flex-wrap: wrap;
           justify-content: space-between;
          .box{
-           width: 50%;
+           width: 46%;
+           margin: 0;
+           .btn_form{
+             margin: 0 0 20px;
+           }
            .input_box{
              margin: 0 0 31px;
              input{
@@ -331,7 +370,7 @@
       .left_box{
         order: 1;
         width: 35%;
-        padding: 85px 20px 0 15px;
+        padding: 91px 20px 0 8px;
         .logo{
           margin: 0;
           width: 307px;
@@ -363,7 +402,7 @@
       .right_box{
         order: 2;
         width: 65%;
-        padding: 83px 85px 0 86px;
+        padding: 85px 53px 0 82px;
         .title{
           font-size: 26px;
           padding: 6px 10px 38px 20px;
@@ -379,10 +418,19 @@
           justify-content: space-between;
           .box{
             width: 50%;
+            .btn_form{
+              width: 316px;
+            }
             .input_box{
               margin: 0 0 31px;
+
               input{
                 width: 314px;
+              }
+              textarea{
+                width: 317px;
+                height: 94px;
+                padding: 20px 20px;
               }
             }
           }
