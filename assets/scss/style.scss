@@ -347,7 +347,6 @@ button {
 .leng_fix{
     position: absolute;
     top: 150px;
-
     justify-content: space-between;
     flex-direction: column;
     width: 41px;
@@ -355,15 +354,23 @@ button {
     background-color: #181818;
     padding: 30px 0 30px 0px;
     display: none;
+
     &.fixed{
         position: fixed;
         top:300px;
         z-index: 88;
         display: flex;
+
     }
     li{
         transform: translate(0px, 0px)rotate(-90deg);
         display: table;
+        color: #fefefe;
+        span{
+            position: absolute;
+            transform: translate(14px, -8px);
+
+        }
         a{
             color: #fefefe;
             font-size: 14px;

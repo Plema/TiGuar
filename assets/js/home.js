@@ -196,7 +196,7 @@ $(document).ready(function(){
             textArr1[current1].classList.add("active");
             (current1 === 4) ? current1 = 0 : current1++;
             ovalIconInit1();
-        }, 2000);
+        }, 3000);
     };
 
 
@@ -281,9 +281,9 @@ $(document).ready(function(){
         $(this).next().addClass("active")
     });
     $("#pp_offers_list_1 li").on("click",function(){
-        $("#pp_offers_list_1 li").removeClass("active"),
-            $(this).addClass("active"),
-            $(this).parent("#pp_offers_list_1").removeClass("active"),
+        $("#pp_offers_list_1 li").removeClass("activ"),
+            $(this).addClass("activ"),
+            $(this).parent("#pp_offers_list_1").removeClass("activ"),
             $(".filter-open").find("span b").text($(this).find("a").text())
     });
 
@@ -292,17 +292,17 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 
-    var element = $(".menu_fix");
+    var element = $(".section_2");
     var height_el = element.offset().top;
     $(window).scroll(function() {
 
         if($(window).scrollTop() > height_el) {
 
-            element.addClass("fixed");
+            $(".menu_fix").addClass("fixed");
 
         } else {
 
-            element.removeClass("fixed");
+            $(".menu_fix").removeClass("fixed");
 
         }
 

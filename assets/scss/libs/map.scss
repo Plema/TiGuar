@@ -166,6 +166,7 @@
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%, 10px);
+                z-index: 2;
                 .tab-button{
                   a{
                     font-family: 'Gotham Pro';
@@ -191,7 +192,24 @@
           .tab-content{
             display: none;
             padding: 0 0 40px 0;
-            &.active{
+            .map{
+              height: 468px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              margin: 0 auto;
+              .tab-content{
+                display: none;
+              }
+              iframe{
+                width: 100%;
+              }
+              .main-addresses__item{
+                background-image:url("../img/marc_1.png");
+                background-repeat: no-repeat;
+
+              }
+            }
+            &.activ{
               display: block;
             }
           }
@@ -201,20 +219,7 @@
     h3{
       margin: 12px 0 40px;
     }
-    .map{
-      height: 468px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      margin: 0 auto;
-      iframe{
-        width: 100%;
-      }
-      .main-addresses__item{
-        background-image:url("../img/marc_1.png");
-        background-repeat: no-repeat;
 
-      }
-    }
   }
 }
 @media (min-width: 1024px) {
@@ -310,13 +315,10 @@
           justify-content: space-between;
           flex-wrap: wrap;
           margin: 0 auto;
-          width: 90%;
-          padding: 0 31px 0 74px;
-
           .map_filter{
             height: fit-content;
             padding: 0 0 40px 0;
-            width: 100%;
+            width: 90%;
             .button_slide{
               display: block;
               position: absolute;
@@ -365,8 +367,8 @@
           }
           .map_content {
             margin: 20px 0 0 0;
-            width: 75%;
-            padding: 0 0 0 29px;
+            width: 100%;
+            padding: 0;
             .tab-content{
               display: none;
 

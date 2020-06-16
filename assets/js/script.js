@@ -112,6 +112,8 @@ $(document).ready(function(){
         $("div [data-id]").removeClass("activ");
         $("div [data-id='" + $(this).attr("href").replace("#","") + "']").addClass("activ");
         e.preventDefault();
+        $('.main-addresses__item_1 img').css('display', 'none');
+
     });
     $(".map_filter .tab-button").click(function(e) {
         e.preventDefault();
@@ -175,51 +177,91 @@ ymaps.ready(function() {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
                 iconImageHref: 'img/marc_1.png',
+                id: 1,
                 // Размеры метки.
-                iconImageSize: [40, 40],
+                iconImageSize: [55, 69],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-80, -254]
             }));
 
     }); //each
+
+});
+var Placemark = {};
+
+ymaps.ready(function() {
+    console.log('2');
+    var myMap2 = new ymaps.Map('myMap2', {
+        center: [50.44059299, 30.52149180],
+        zoom: 12,
+
+        controls: ['zoomControl']
+    }, {
+        suppressMapOpenBlock: true,
+    });
+    console.log('3');
+    myMap2.behaviors.disable('scrollZoom');
+
     $('.main-addresses__item_2').each(function() {
         var obj_2 = $('.main-addresses__item_2').attr("data-coord");
         obj_2 = JSON.parse(obj_2); //преобразовываем в объект
         //console.log(obj); //тоже самое, но уже не строка, а объект
 
-        myMap.geoObjects
+        myMap2.geoObjects
             .add(new ymaps.Placemark(obj_2, { //тут была неправильная ")" и "[obj]"
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
                 iconImageHref: 'img/marc_2.png',
                 // Размеры метки.
-                iconImageSize: [40, 40],
+                iconImageSize: [36, 47],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-80, -254]
             }));
 
     }); //each
+
+});
+var Placemark = {};
+
+ymaps.ready(function() {
+    console.log('2');
+    var myMap3 = new ymaps.Map('myMap3', {
+        center: [50.44059299, 30.52149180],
+        zoom: 12,
+
+        controls: ['zoomControl']
+    }, {
+        suppressMapOpenBlock: true,
+    });
+    console.log('3');
+    myMap3.behaviors.disable('scrollZoom');
 
     $('.main-addresses__item_3').each(function() {
         var obj_3 = $('.main-addresses__item_3').attr("data-coord");
         obj_3 = JSON.parse(obj_3); //преобразовываем в объект
         //console.log(obj); //тоже самое, но уже не строка, а объект
 
-        myMap.geoObjects
+        myMap3.geoObjects
             .add(new ymaps.Placemark(obj_3, { //тут была неправильная ")" и "[obj]"
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
                 iconImageHref: 'img/marc_3.png',
                 // Размеры метки.
-                iconImageSize: [40, 40],
+                iconImageSize: [22, 27],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-80, -254]
             }));
 
     }); //each
+
 });
+
+
+
+
+
