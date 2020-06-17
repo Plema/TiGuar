@@ -305,16 +305,14 @@
               transition: 0.5s;
               padding: 15px 10px 5px 10px;
               text-align: center;
+
             }
             .bg{
               position: absolute;
               height: 100%;
               width: 100%;
               background: rgba(24, 24, 24, 0.9);
-              color: #ffffff;
-              font-family: "Gotham Pro";
-              font-size: 18px;
-              font-weight: 400;
+
               text-align: center;
               display: block;
               padding: 108px 30px 90px 10px;
@@ -323,6 +321,17 @@
               transition: 0.5s;
               top: 0;
               left: 0;
+              span{
+                font-family: 'Gotham Pro';
+                font-size: 18px;
+                font-weight: 400;
+                position: absolute;
+                top: 50%;
+                color: #fff;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+              }
             }
           }
         }
