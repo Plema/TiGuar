@@ -470,6 +470,7 @@
                 .benefits__number{
                   transform: translate(0px, 0px) scale(1.1);
                   color: #db1515;
+                  transition: 0.5s;
                   &.not{
                     &:before{
                       color: #db1515;
@@ -511,8 +512,8 @@
               .benefits__number{
                 text-align: center;
                 margin: 0 auto;
-                transition: 0.5s;
-                position: relative;
+                //transition: 0.5s;
+                //position: relative;
                 &.not{
                   &:before{
                     content: 'до';
@@ -1318,7 +1319,21 @@
               &.active{
                 .benefits__element{
                   .benefits__number{
-                    transform: translate(0px, 20px) scale(1.8);
+                    transform: translate(0px, 20px) scale(1.5);
+                    &.not{
+                      font-size: 28px;
+                      transform: translate(0px, 20px) scale(1.5);
+                      &:before{
+                        font-size: 28px;
+                        left: -38px;
+                        transform: translate(0px, 0px) scale(1.1);
+                      }
+                      &:after{
+                        font-size: 28px;
+                        right: -54px;
+                        transform: translate(0px, 0px) scale(1.0);
+                      }
+                    }
                   }
                 }
                 .benefits__title{
@@ -1680,7 +1695,7 @@
             }
           }
           .map_content {
-   
+
             .tabs-content{
               display: none;
 

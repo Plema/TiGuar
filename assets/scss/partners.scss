@@ -102,6 +102,56 @@
       max-width: 200px;
       margin: 0 auto;
       li{
+        .page_next{
+          position: relative;
+          cursor: pointer;
+          &:hover{
+
+            i{
+              transition: 0.5s;
+              &:before{
+                color: #db1515;
+                transition: 0.5s;
+              }
+            }
+          }
+          i{
+            position: absolute;
+            right: 0;
+
+            &:before{
+              color: #727272;
+              transition: 0.5s;
+              transform: translate(16px, 1px)rotate(0deg);
+              font-size: 12px;
+            }
+          }
+
+        }
+        .page_prew{
+          position: relative;
+          cursor: pointer;
+          &:hover{
+
+            i{
+              transition: 0.5s;
+              &:before{
+                color: #db1515;
+                transition: 0.5s;
+              }
+            }
+          }
+          i{
+            position: absolute;
+            left: 0;
+            &:before{
+              color: #727272;
+              transform: translate(-16px, 1px)rotate(180deg);
+              font-size: 12px;
+
+            }
+          }
+        }
         a{
           color: #181818;
           font-family: "Gotham Pro";
@@ -118,6 +168,7 @@
             background-color: #181818;
             border-radius: 50%;
           }
+
         }
       }
     }

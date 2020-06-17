@@ -137,7 +137,44 @@ $(document).ready(function(){
                 }
             },
         ]
+
     });
+    $(function () {
+
+        var show = true;
+        var countbox = ".benefits__inner";
+        $(window).on("scroll load resize", function () {
+            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+            var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+            var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+            var w_height = $(window).height(); // Высота окна браузера
+            var d_height = $(document).height(); // Высота всего документа
+            var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+            if (w_top + 1000 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                $('.benefits__number').css('opacity', '1');
+                $('.benefits__number').spincrement({
+                    thousandSeparator: "",
+                    duration: 1200
+
+                });
+
+                show = false;
+                setTimeout(ovalIconInit1(), 2000);
+            }
+        });
+
+    });
+    var timeout1, current1 = 0,
+        textArr1 = document.querySelectorAll('.benefits__inner')
+
+    function ovalIconInit1 () {
+        timeout1 = setTimeout(function() {
+            textArr1.forEach(function(i) { (i) >= i.classList.remove('active') });
+            textArr1[current1].classList.add("active");
+            (current1 === 4) ? current1 = 0 : current1++;
+            ovalIconInit1();
+        }, 2000);
+    };
     $('.partner_slider').slick({
         infinite: false,
         draggable:true,
@@ -162,42 +199,8 @@ $(document).ready(function(){
         $('div[id^="test_hide"]').hide();
         $('#test_hide'+value).show();
     });
-    $(function () {
 
-        var show = true;
-        var countbox = ".benefits__inner";
-        $(window).on("scroll load resize", function () {
-            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-            var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-            var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-            var w_height = $(window).height(); // Высота окна браузера
-            var d_height = $(document).height(); // Высота всего документа
-            var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-            if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-                $('.benefits__number').css('opacity', '1');
-                $('.benefits__number').spincrement({
-                    thousandSeparator: "",
-                    duration: 1200
 
-                });
-
-                show = false;
-                setTimeout(ovalIconInit1(), 2000);
-            }
-        });
-
-    });
-    var timeout1, timeout2, setImeout, current1 = 0,
-        textArr1 = document.querySelectorAll('.benefits__inner')
-
-    function ovalIconInit1 () {
-        timeout1 = setTimeout(function() {
-            textArr1.forEach(function(i) { (i) >= i.classList.remove('active') });
-            textArr1[current1].classList.add("active");
-            (current1 === 4) ? current1 = 0 : current1++;
-            ovalIconInit1();
-        }, 3000);
-    };
 
 
 
