@@ -248,6 +248,77 @@
     }
   }
 }
+.validPopup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .close-popup{
+    position: absolute;
+    right: 25px;
+    top: -4px;
+    z-index: 1;
+    cursor: pointer;
+    &::before {
+      content: "\e806";
+      font-family: 'fontello';
+      font-size: 13px;
+      left: 0px;
+      top: 16px;
+      position: absolute;
+      color: #373737;
+    }
+  }
+  .valid__popup{
+    position: absolute;
+    width: 290px;
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.14);
+    background-color: #ffffff;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #e1e1e1;
+    .content{
+      padding: 20px 10px 20px 10px;
+      text-align: center;
+      h3{
+        color: #181818;
+        font-family: 'Gotham Pro';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 37px;
+
+      }
+      p{
+        color: #181818;
+        font-family: 'Gotham Pro';
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 29px;
+      }
+    }
+  }
+}
 @media (min-width: 1280px) {
   .registrationPopup{
     .registration__popup{
@@ -296,6 +367,16 @@
           position: relative;
           width: 337px;
         }
+      }
+    }
+  }
+
+  .validPopup{
+    .valid__popup{
+      width: 594px;
+      .content{
+        padding: 70px 50px;
+        text-align: center;
       }
     }
   }

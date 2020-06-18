@@ -476,20 +476,24 @@
             }
             &.active{
               .benefits__element{
+                position: relative;
+                span{
+                  color: #db1515;
+                }
+                strong{
+                  color: #db1515;
+                }
                 .benefits__number{
                   transform: translate(0px, 0px) scale(1.1);
                   color: #db1515;
                   transition: 0.5s;
+
                   &.not{
-                    &:before{
-                      color: #db1515;
-                    }
-                    &:after{
-                      color: #db1515;
-                    }
+
                   }
                   &:before{
                     color: #db1515;
+                    transform: translate(0px, 0px) scale(1.1);
                   }
 
                 }
@@ -518,37 +522,45 @@
               position: relative;
               text-align: center;
               transition: 0.5s;
+              span{
+                color: #181818;
+                font-family: "Gotham Pro";
+                font-size: 22px;
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+                transition: 0.5s;
+                transform: translate(0px, -50%);
+                top: 50%;
+              }
+              strong{
+                color: #181818;
+                font-family: "Gotham Pro";
+                font-size: 22px;
+                font-weight: 400;
+                position: absolute;
+                right: 0;
+                transition: 0.5s;
+                transform: translate(0px, -50%);
+                top: 50%;
+              }
               .benefits__number{
                 text-align: center;
                 margin: 0 auto;
+                position: relative;
                 //transition: 0.5s;
                 //position: relative;
                 &.not{
+                  position: relative;
                   &:before{
-                    content: 'до';
-                    color: #181818;
-                    font-family: "Gotham Pro";
-                    font-size: 22px;
-                    font-weight: 400;
-                    position: absolute;
-                    left: -36px;
-                    transition: 0.5s;
+                    display: none;
                   }
-                  &:after{
-                    content: 'лет';
-                    color: #181818;
-                    font-family: "Gotham Pro";
-                    font-size: 22px;
-                    font-weight: 400;
-                    position: absolute;
-                    right: -45px;
-                    transition: 0.5s;
-                  }
+
                 }
                 &:before{
                   content: '>';
                   position: absolute;
-                  left: -20px;
+                  left: -15px;
                   color: #181818;
                   font-size: 22px;
                 }
@@ -1327,21 +1339,22 @@
             .benefits__inner{
               &.active{
                 .benefits__element{
+                  span{
+                    font-size: 28px;
+                    transform: translate(0px, 0px) scale(1.1);
+                    left: 20%;
+                  }
+                  strong{
+                    font-size: 28px;
+                    transform: translate(0px, 0px) scale(1.1);
+                    right: 10%;
+                  }
                   .benefits__number{
                     transform: translate(0px, 20px) scale(1.5);
                     &.not{
                       font-size: 28px;
                       transform: translate(0px, 20px) scale(1.5);
-                      &:before{
-                        font-size: 28px;
-                        left: -38px;
-                        transform: translate(0px, 0px) scale(1.1);
-                      }
-                      &:after{
-                        font-size: 28px;
-                        right: -54px;
-                        transform: translate(0px, 0px) scale(1.0);
-                      }
+
                     }
                   }
                 }
@@ -1361,20 +1374,24 @@
                 top: 75px;
               }
               .benefits__element{
+                span{
+                  font-size: 28px;
+                  transform: translate(0px, 0px);
+                  left: 20%;
+                }
+                strong{
+                  font-size: 28px;
+                  transform: translate(0px, 0px);
+                  right: 10%;
+                }
                .benefits__number{
                  font-size: 28px;
                  transform: translate(0px, 15px);
+
                  &.not{
                    font-size: 28px;
                    transform: translate(0px, 15px);
-                   &:before{
-                     font-size: 28px;
-                     left: -38px;
-                   }
-                   &:after{
-                     font-size: 28px;
-                     right: -54px;
-                   }
+
                  }
                  &:before{
                    font-size: 28px;
@@ -2156,13 +2173,6 @@
                 top: 75px;
               }
               .benefits__element{
-                span{
-                  font-size: 28px;
-                }
-                strong{
-                  font-size: 28px;
-                }
-
 
               }
 

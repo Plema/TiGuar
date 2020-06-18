@@ -50,10 +50,24 @@ $(document).ready(function(){
     });
     $('.overlay-call .closeBtn').on("click", function () {
 
-        $('.valid').addClass('active');
+        //$('.valid').addClass('active');
 
     });
 
+
+    $('.open-valid').on("click", function () {
+        $('.overlay-valid').addClass('active fadeInDown');
+        $('.overlay-valid').removeClass('fadeOutUp');
+        $('body').addClass('hid');
+
+    });
+    $('.overlay-valid .close,.close-popup').on("click", function () {
+        $('.overlay-valid').toggleClass('fadeOutUp fadeInDown');
+        $('body').removeClass('hid');
+        window.setTimeout(function() {
+            $('.overlay-valid').removeClass('active');
+        }, 500);
+    });
 
 
     $('.open-video').on("click", function () {
@@ -176,7 +190,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/marc_1.png',
+                iconImageHref: '/wp-content/themes/tiguar/img/marc_1.png',
                 id: 1,
                 // Размеры метки.
                 iconImageSize: [55, 69],
@@ -213,7 +227,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/marc_2.png',
+                iconImageHref: '/wp-content/themes/tiguar/img/marc_2.png',
                 // Размеры метки.
                 iconImageSize: [36, 47],
                 // Смещение левого верхнего угла иконки относительно
@@ -249,7 +263,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/marc_3.png',
+                iconImageHref: '/wp-content/themes/tiguar/img/marc_3.png',
                 // Размеры метки.
                 iconImageSize: [22, 27],
                 // Смещение левого верхнего угла иконки относительно
