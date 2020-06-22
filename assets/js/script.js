@@ -55,6 +55,20 @@ $(document).ready(function(){
     });
 
 
+    $('.open-confidentiality').on("click", function () {
+        $('.overlay-confidentiality').addClass('active fadeInDown');
+        $('.overlay-confidentiality').removeClass('fadeOutUp');
+        $('body').addClass('hid');
+
+    });
+    $('.overlay-confidentiality .close,.close-popup').on("click", function () {
+        $('.overlay-confidentiality').toggleClass('fadeOutUp fadeInDown');
+        $('body').removeClass('hid');
+        window.setTimeout(function() {
+            $('.overlay-confidentiality').removeClass('active');
+        }, 500);
+    });
+
     $('.open-valid').on("click", function () {
         $('.overlay-valid').addClass('active fadeInDown');
         $('.overlay-valid').removeClass('fadeOutUp');
@@ -120,7 +134,15 @@ $(document).ready(function(){
     });
 
 
-
+    $(".lang_filter .filter-open").on("click",function(){
+        $(this).next().addClass("active")
+    });
+    $(".lang_filter #pp_offers_list li").on("click",function(){
+        $("#pp_offers_list li").removeClass("active"),
+            $(this).addClass("active"),
+            $(this).parent("#pp_offers_list").removeClass("active"),
+            $(".filter-open").find("span b").text($(this).find("a").text())
+    });
 
     $(".map_filter .tab-button a").click(function(e) {
         $("div [data-id]").removeClass("activ");
@@ -190,7 +212,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: '/wp-content/themes/tiguar/img/marc_1.png',
+                iconImageHref: '/img/marc_1.png',
                 id: 1,
                 // Размеры метки.
                 iconImageSize: [55, 69],
@@ -227,7 +249,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: '/wp-content/themes/tiguar/img/marc_2.png',
+                iconImageHref: '/img/marc_2.png',
                 // Размеры метки.
                 iconImageSize: [36, 47],
                 // Смещение левого верхнего угла иконки относительно
@@ -263,7 +285,7 @@ ymaps.ready(function() {
             }, {
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: '/wp-content/themes/tiguar/img/marc_3.png',
+                iconImageHref: '/img/marc_3.png',
                 // Размеры метки.
                 iconImageSize: [22, 27],
                 // Смещение левого верхнего угла иконки относительно
