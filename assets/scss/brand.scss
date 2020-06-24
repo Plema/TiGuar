@@ -151,18 +151,11 @@ footer{
 
 @media (min-width: 1280px){
   .section_1{
-    padding: 34px 0 0;
+    padding: 130px 0 0;
     .container{
       .img_box{
-        margin: 82px auto 0;
-        img{
-          width: 412px;
-          height: 268px;
-        }
-        .video{
-          width: 412px;
-          height: 268px;
-        }
+        margin: 0 auto;
+
       }
       .text{
         margin: 43px 0 0 15px;
@@ -241,4 +234,24 @@ footer{
   footer{
     transform: translate(0px, -168px);
   }
+}
+@media (min-width: 18000px){
+  .section_1{
+    padding: 34px 0 0;
+    .container{
+      .img_box{
+
+        img{
+          width: 412px;
+          height: 268px;
+        }
+        .video{
+          width: 412px;
+          height: 268px;
+        }
+      }
+
+    }
+  }
+
 }

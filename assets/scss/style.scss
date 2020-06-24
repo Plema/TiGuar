@@ -114,7 +114,7 @@ button {
     font-family: 'Gotham Pro';
     font-size: 14px;
     font-weight: 700;
-    padding: 23px 24px 23px 10px;
+    padding: 25px 24px 24px 28px;
     text-transform: uppercase;
     transition: 0.5s;
     &:hover{
@@ -211,7 +211,7 @@ button {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 4px);
-    padding: 23px 15px 10px 15px;
+    padding: 22px 15px 22px;
     &:hover{
         background: none;
         color: #db1515;
@@ -242,7 +242,7 @@ button {
     font-size: 26px;
     font-weight: 400;
     padding: 0px 0 0 20px;
-    margin: 60px 0 0 0;
+    margin: 65px 0 65px 0;
     position: relative;
     &:before{
         content: '';
@@ -357,7 +357,6 @@ button {
     background-color: #181818;
     padding: 30px 0 30px 0px;
     display: none;
-
     &.fixed{
         position: fixed;
         top:300px;
@@ -367,12 +366,14 @@ button {
     }
     li{
         transform: translate(0px, 0px)rotate(-90deg);
-        display: table;
+        display: block;
         color: #fefefe;
         span{
             position: absolute;
             transform: translate(14px, -8px);
-
+            display: block;
+            width: 2px;
+            height: 20px;
         }
         a{
             color: #fefefe;
@@ -405,15 +406,21 @@ button {
     height: 70px;
     display: flex;
     justify-content: space-between;
+
     button{
         border: none;
         background: none;
         position: absolute;
         cursor: pointer;
+        display: block;
+        height: 20px;
+        width: 20px;
         i{
+            display: block;
             &:before{
                 font-size: 12px;
                 color: #727272;
+                display: block;
             }
             &:hover{
                 &:before{
@@ -570,8 +577,8 @@ a {
     }
     .chapter{
         font-size: 50px;
-        padding: 0px 0 0px 34px;
-        margin: 57px 0 0;
+        margin: 68px 0 83px;
+        padding: 0 0 0 34px;
         &:before{
             left: 15px;
             top:25px;

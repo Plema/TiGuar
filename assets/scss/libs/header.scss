@@ -8,7 +8,7 @@ header{
     }
     .mobile{
       background: #181818;
-      padding: 15px 0 11px;
+      padding: 15px 0 15px;
       .logo_mob{
         position: absolute;
         z-index: 2;
@@ -16,19 +16,18 @@ header{
         left: 0;
         display: block;
         width: 160px;
-        height: 56px;
+        height: 62px;
         background-color: #fff;
         img{
           position: absolute;
-          right: 10px;
+          top: 19px;
+          right: 15px;
           width: 135px;
           height: 30px;
-          top: 15px;
         }
       }
       display: flex;
       justify-content: space-between;
-      padding: 15px 0 9px 0;
       position: relative;
       &.fix{
         position: fixed;
@@ -48,16 +47,24 @@ header{
            a{
              width: 29px;
              height: 29px;
-             cursor: pointer;
-             border-radius: 50%;
-             background-color: #db1515;
              display: block;
              text-align: center;
              margin: 2px 5px 0 5px;
+             position: relative;
              i{
+               background-color: #db1515;
+               cursor: pointer;
+               border-radius: 50%;
+               width: 29px;
+               height: 29px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               text-align: center;
                &:before{
-                 color: #ffffff;
                  font-size: 12px;
+                 color: #fff;
                  line-height: 29px;
                }
              }
@@ -153,7 +160,8 @@ header{
 @media (min-width: 1280px){
   header{
     padding: 0 0 25px 0;
-
+    position: fixed;
+    width: 100%;
     .mobile{
       display: none;
     }
@@ -167,17 +175,16 @@ header{
       background-color: #fff;
       img{
         position: absolute;
-        top: 33px;
+        top: 40px;
         right: 20px;
         width: 180px;
-        height: 37px;
 
       }
     }
     .dasctop{
       display: block;
       background-color: #181818;
-      padding: 48px 0 47px;
+      padding: 47px 0 47px;
       .container{
         display: flex;
         justify-content: space-between;
@@ -296,9 +303,6 @@ header{
       }
     }
     .dasctop{
-      display: block;
-      background-color: #181818;
-      padding: 48px 0 47px;
       .container{
         display: flex;
         justify-content: space-between;
@@ -306,7 +310,7 @@ header{
         .menu{
           z-index: 1;
           width: 75%;
-          padding: 0 20px 0 237px;
+          padding: 0 20px 0 300px;
           display: flex;
           justify-content: space-between;
           li{

@@ -139,7 +139,7 @@
 @media (min-width: 1280px) {
 
   .section_1{
-    padding: 32px 0 0;
+    padding: 155px 0 0;
     position: relative;
     .container{
       .title{
@@ -244,9 +244,11 @@
             .img_block{
               width: 100%;
               img{
-                width: 420px;
-                height: 272px;
+                width: 48%;
+                height: auto;
                 margin: 0;
+                max-width: 420px;
+                max-height: 272px;
               }
             }
             .text{

@@ -80,9 +80,9 @@
                   line-height: 20px;
                   display: block;
                   width: 291px;
-                  height: 68px;
+                  min-height: 68px;
                   margin: 5px auto;
-                  padding: 22px 10px;
+                  padding: 24px 10px 24px;
                   color: #fff;
                   border-radius: 34px;
                   background-color: #727272;
@@ -149,6 +149,7 @@
               font-size: 16px;
               font-weight: 700;
               line-height: 12.48px;
+              padding: 0;
               &:before{
                 content: '';
               }
@@ -203,6 +204,28 @@
 
 
 @media (min-width: 1024px) {
+  .section_8{
+    .bottom{
+
+      .container{
+        p{
+
+          strong{
+            font-weight: 700;
+            display: block;
+            width: 300px;
+            padding: 4px 10px 5px 7px;
+            transform: translate(65px,2px);
+            color: #fff;
+            background-color: #181818;
+            text-align: center;
+
+          }
+        }
+
+      }
+    }
+  }
 
 }
 
@@ -212,17 +235,18 @@
   .section_8{
     padding: 101px 0 0;
     position: relative;
+    overflow: hidden;
     &:before{
       position: absolute;
-      content: '';
-      background-image: url("../img/ell_8.png");
-      height: 100%;
-      background-repeat: no-repeat;
       z-index: -1;
-      background-size: auto;
-      right: 0;
-      width: 83%;
-      top: -6%;
+      top: 0%;
+      right: -85px;
+      width: 61%;
+      height: 100%;
+      content: '';
+      background-image: url(../img/ell_8.png);
+      background-repeat: no-repeat;
+      background-size: contain;
 
     }
     .container{
@@ -333,6 +357,7 @@
               }
               .linc{
                 font-size: 18px;
+                padding: 0;
                 &:before{
                   content: '';
                 }
@@ -367,7 +392,7 @@
         }
         .btn_red{
           right: 0;
-          padding: 28px 10px 21px 10px;
+          padding: 27px 10px 27px;
           transform: translate(45px,-109px);
           width: 315px;
           min-height: 69px;
@@ -390,6 +415,10 @@
   .section_8{
     padding: 101px 0 0;
     position: relative;
+    &:before{
+      width: 83%;
+      background-size: auto;
+    }
     .bottom{
       .container{
         .btn_red{
