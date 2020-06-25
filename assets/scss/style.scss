@@ -140,6 +140,18 @@ button {
             }
         }
     }
+    &:active{
+        background-color: #db1515;
+        border: 1px solid #db1515;
+        a{
+            i{
+                background-color: #ffffff;
+                &:before{
+                    color: #db1515;
+                }
+            }
+        }
+    }
 }
 .btn_w{
     cursor: pointer;

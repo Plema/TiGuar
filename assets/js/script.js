@@ -123,8 +123,24 @@ $(document).ready(function(){
         });
     });
 
+
+
+
+
+    $(".lang_filter .filter-open_lang").on("click",function(){
+        $(this).next().toggleClass("fix")
+    });
+    $(".lang_filter #pp_offers_list_3 li").on("click",function(){
+        $("#pp_offers_list_3 li").removeClass("fix"),
+            $(this).addClass("fix"),
+            $(this).parent("#pp_offers_list_3").removeClass("fix"),
+            $(".filter-open_lang").find("span b").text($(this).find("a").text())
+    });
+
+
+
     $(".partners_filter .filter-open").on("click",function(){
-        $(this).next().addClass("active")
+        $(this).next().toggleClass("active")
     });
     $(".partners_filter #pp_offers_list li").on("click",function(){
         $("#pp_offers_list li").removeClass("active"),
@@ -133,17 +149,6 @@ $(document).ready(function(){
             $(".filter-open").find("span b").text($(this).find("a").text())
     });
 
-
-
-    $(".lang_filter .filter-open_lang").on("click",function(){
-        $(this).next().addClass("fix")
-    });
-    $(".lang_filter #pp_offers_list_3 li").on("click",function(){
-        $("#pp_offers_list_3 li").removeClass("fix"),
-            $(this).addClass("fix"),
-            $(this).parent("#pp_offers_list_3").removeClass("fix"),
-            $(".filter-open_lang").find("span b").text($(this).find("a").text())
-    });
 
     $(".map_filter .tab-button a").click(function(e) {
         $("div [data-id]").removeClass("activ");
@@ -158,14 +163,14 @@ $(document).ready(function(){
         $(this).addClass('activ');
     });
 
-    $(".map_filter .filter-open").on("click",function(){
-        $(this).next().addClass("activ")
+    $(".map_filter .filter-open_map").on("click",function(){
+        $(this).next().toggleClass("activ")
     });
     $(".map_filter #pp_offers_list_1 li").on("click",function(){
         $("#pp_offers_list_1 li").removeClass("activ"),
             $(this).addClass("activ"),
             $(this).parent("#pp_offers_list_1").removeClass("activ"),
-            $(".filter-open").find("span b").text($(this).find("a").text())
+            $(".filter-open_map").find("span b").text($(this).find("a").text())
     });
 
 });

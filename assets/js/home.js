@@ -171,7 +171,7 @@ $(document).ready(function(){
             var w_height = $(window).height(); // Высота окна браузера
             var d_height = $(document).height(); // Высота всего документа
             var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-            if (w_top + 2000 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            if (w_top >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
                 $('.benefits__number').css('opacity', '1');
                 $('.benefits__number').spincrement({
                     thousandSeparator: "",
@@ -301,15 +301,7 @@ $(document).ready(function(){
     });
 
 
-    $(".map_filter .filter-open").on("click",function(){
-        $(this).next().addClass("active")
-    });
-    $("#pp_offers_list_1 li").on("click",function(){
-        $("#pp_offers_list_1 li").removeClass("activ"),
-            $(this).addClass("activ"),
-            $(this).parent("#pp_offers_list_1").removeClass("activ"),
-            $(".filter-open").find("span b").text($(this).find("a").text())
-    });
+
 
 
 });

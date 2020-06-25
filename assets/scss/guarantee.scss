@@ -22,17 +22,31 @@
           transform: translate(11px,0px) rotate(180deg);
           top: 0;
           left: auto;
+          i{
+            &:before{
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%)rotate(180deg);
+              position: absolute;
+            }
+          }
         }
         &.next{
           bottom: 0;
           left: 0;
-          transform: translate(11px,0px) rotate(0deg);
+          transform: translate(11px,0px);
           right: auto;
+          i{
+            &:before{
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%)rotate(180deg);
+              position: absolute;
+            }
+          }
         }
         .icon-next{
-          &:before{
-            transform: rotate(180deg);
-          }
+
         }
         i{
           &:before{
