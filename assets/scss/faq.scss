@@ -23,6 +23,9 @@
             color: #ffffff;
             border: 1px solid #db1515;
             border-radius: 50%;
+            -o-border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
             background:#db1515 ;
           }
         }
@@ -42,6 +45,9 @@
           color: #db1515;
           border: 1px solid #db1515;
           border-radius: 50%;
+          -o-border-radius:50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           left: 0;
           position: absolute;
           top: 0;
@@ -81,6 +87,9 @@
       min-height: 67px;
       font-size: 14px;
       border-radius: 35px;
+      -o-border-radius:35px;
+      -moz-border-radius:35px;
+      -webkit-border-radius:35px;
     }
   }
 }

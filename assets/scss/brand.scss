@@ -25,6 +25,9 @@
           height: 69px;
           background-color: #db1515;
           border-radius: 50%;
+          -o-border-radius:50%;
+          -moz-border-radius:50%;
+          -webkit-border-radius:50%;
           cursor: pointer;
           transition: 0.5s;
           &:hover{

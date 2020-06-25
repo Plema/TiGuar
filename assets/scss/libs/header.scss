@@ -55,6 +55,9 @@ header{
                background-color: #db1515;
                cursor: pointer;
                border-radius: 50%;
+               -o-border-radius:50%;
+               -moz-border-radius:50%;
+               -webkit-border-radius:50%;
                width: 29px;
                height: 29px;
                position: absolute;
@@ -141,6 +144,9 @@ header{
                 height: 29px;
                 background-color: #db1515;
                 border-radius: 50%;
+                -o-border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
                 text-align: center;
                 top: 0;
                 &:before{
@@ -267,6 +273,9 @@ header{
                 height: 29px;
                 background-color: #db1515;
                 border-radius: 50%;
+                -o-border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
                 cursor: pointer;
                 text-align: center;
                 top: -5px;
@@ -369,6 +378,9 @@ header{
                 height: 29px;
                 background-color: #db1515;
                 border-radius: 50%;
+                -o-border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
                 cursor: pointer;
                 text-align: center;
                 top: -5px;

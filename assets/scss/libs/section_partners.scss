@@ -41,7 +41,9 @@
             min-height: 68px;
             padding: 23px 43px 15px 21px;
             margin: 0 auto;
-            border-radius: 34px;
+            -o-border-radius:34px;
+            -moz-border-radius:34px;
+            -webkit-border-radius:34px;
             background-color: #db1515;
             transition: all 0.5s;
             display: block;
@@ -195,7 +197,9 @@
         padding: 26px 15px 15px;
         transform: translate(-50%,4px);
         border: 1px solid #db1515;
-        border-radius: 34px;
+        -o-border-radius:34px;
+        -moz-border-radius:34px;
+        -webkit-border-radius:34px;
         background: #db1515;
       }
     }
@@ -398,6 +402,9 @@
           width: 315px;
           min-height: 69px;
           border-radius: 34px;
+          -o-border-radius:34px;
+          -moz-border-radius:34px;
+          -webkit-border-radius:34px;
           z-index: 3;
           &:hover{
             background:#ffffff;

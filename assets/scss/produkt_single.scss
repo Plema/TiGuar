@@ -19,6 +19,9 @@
             width: 292px;
             height: 68px;
             border-radius: 34px;
+            -o-border-radius:34px;
+            -moz-border-radius:34px;
+            -webkit-border-radius:34px;
             border: 1px solid #181818;
             min-height: 68px;
             padding: 22px 10px;
@@ -67,6 +70,9 @@
                   padding: 22px 10px;
                   color: #fff;
                   border-radius: 34px;
+                  -o-border-radius:34px;
+                  -moz-border-radius:34px;
+                  -webkit-border-radius:34px;
                   background-color: #727272;
                   text-align: center;
                 }

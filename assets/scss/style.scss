@@ -119,6 +119,9 @@ button {
     max-width: 290px;
     min-height: 67px;
     border-radius: 34px;
+    -o-border-radius:34px;
+    -moz-border-radius:34px;
+    -webkit-border-radius:34px;
     border: 1px solid #ffffff;
     text-align: center;
     color: #ffffff;
@@ -160,6 +163,9 @@ button {
     max-width: 290px;
     min-height: 67px;
     border-radius: 34px;
+    -o-border-radius:34px;
+    -moz-border-radius:34px;
+    -webkit-border-radius:34px;
     text-align: center;
     color: #000000;
     font-family: 'Gotham Pro';
@@ -177,6 +183,9 @@ button {
     width: 290px;
     min-height: 58px;
     border-radius: 29px;
+    -o-border-radius:29px;
+    -moz-border-radius:29px;
+    -webkit-border-radius:29px;
     border: 1px solid #db1515;
     color: #db1515;
     font-family: "Gotham Pro";
@@ -197,6 +206,9 @@ button {
     width: 290px;
     min-height: 68px;
     border-radius: 34px;
+    -o-border-radius:34px;
+    -moz-border-radius:34px;
+    -webkit-border-radius:34px;
     background-color: #db1515;
     color: #ffffff;
     font-family: "Gotham Pro";
@@ -218,6 +230,9 @@ button {
     width: 291px;
     min-height: 58px;
     border-radius: 29px;
+    -o-border-radius:29px;
+    -moz-border-radius:29px;
+    -webkit-border-radius:29px;
     background: #db1515;
     border: 1px solid #db1515;
     color: #ffffff;
@@ -553,6 +568,9 @@ form{
             width: 290px;
             height: 68px;
             border-radius: 34px;
+            -o-border-radius:34px;
+            -moz-border-radius:34px;
+            -webkit-border-radius:34px;
             border: 1px solid #727272;
             background: none;
         }
