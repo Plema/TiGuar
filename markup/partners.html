@@ -11,6 +11,99 @@
 </head>
 <body>
 
+<!-- Popup -->
+<div class="overlay-registration registrationPopup animated ">
+    <div class="close"></div>
+    <div class="registration__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Вход</h3>
+            <p>
+                Укажите ваш номер телефона и пароль для
+                входа в личный кабинет
+            </p>
+           <form>
+               <div class="input_box">
+                   <input placeholder="Ваш телефон" class="phone_mask">
+               </div>
+               <div class="input_box">
+                   <input placeholder="Введите пароль">
+               </div>
+               <a href="#" class="btn_red closeBtn">войти</a>
+           </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-call callPopup animated ">
+    <div class="close"></div>
+    <div class="call__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Введите данные для
+                заказа обратного звонка</h3>
+            <form>
+                <div class="input_box">
+                    <input placeholder="Введите имя">
+                </div>
+                <div class="input_box">
+                    <input placeholder="Ваш телефон" class="phone_mask">
+                </div>
+                <a href="#" class="btn_red closeBtn">отправить</a>
+            </form>
+            <span class="valid">
+                Благодарим за заявку! Наш менежер свяжется с вами в ближайшее время
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-video videoPopup animated ">
+    <div class="close"></div>
+    <div class="video__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <video width="100%" height="auto" preload="auto" controls="controls" loop="loop">
+                <source src="img/video_1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-valid validPopup animated ">
+    <div class="close"></div>
+    <div class="valid__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Спасибо за заявку!</h3>
+        </div>
+    </div>
+</div>
+<div class="overlay-confidentiality confidentialityPopup animated ">
+    <div class="close"></div>
+    <div class="confidentiality__popup ">
+        <span class="close-popup"></span>
+        <div class="content">
+            <h3>Политика Конфиденциальности!</h3>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+</div>
 
 <!-- Header -->
 <header class="header">
@@ -74,8 +167,8 @@
                </ul>
                <ul class="contact">
                    <li><a href="tel:+7 (3012) 701-800" class="phone"><i class="icon-communications"></i>+7 (3012) 701-800</a></li>
-                   <li><a href="#"><i class="icon-phone"></i></a></li>
-                   <li><a href="#"><i class="icon-social"></i></a></li>
+                   <li><a href="#" class="open-call"><i class="icon-phone"></i></a></li>
+                   <li><a href="#" class="open-registration"><i class="icon-social"></i></a></li>
                </ul>
            </div>
        </div>
@@ -270,7 +363,7 @@
                         <div class="map">
                             <div class="main-addresses__item_1" data-coord="[50.44936227, 30.50295237 ]"></div>
                             <div class="main-addresses__item_1" data-coord="[50.44760855, 30.51187877]"></div>
-
+                            <div class="main-addresses__item_4" data-coord="[50.44059299, 30.52149180]"></div>
                             <div id="myMap" style="width: 100%; height: 468px"></div>
                         </div>
                     </div>

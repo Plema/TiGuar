@@ -73,9 +73,20 @@ input{
     background:none!important;
 }
 
+
+form{
+    .input_box{
+        input{
+           &.invalid{
+               border: 1px solid #db1515;
+           }
+        }
+    }
+}
 button {
     cursor: pointer;
 }
+
 .breadcrumbs{
     display: flex;
     justify-content: flex-start;
@@ -144,7 +155,7 @@ button {
     font-weight: 700;
     padding: 23px 24px 23px 10px;
     text-transform: uppercase;
-    transition: 0.5s; 
+    transition: 0.5s;
     &:hover{
         background-color: #db1515;
         color: #000000;

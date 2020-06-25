@@ -140,26 +140,47 @@ $(document).ready(function(){
 
     });
     $(function () {
+        $(document).ready(function(){
+            var $element = $('.section_3 ');
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop() + $(window).height();
+                //Если скролл до конца елемента
+                //var offset = $element.offset().top + $element.height();
+                //Если скролл до начала елемента
+                var offset = $element.offset().top
 
+                if (scroll > offset) {
+                    $('.leng_fix').addClass("fixed");
+
+                }
+                else {
+
+                    $('.leng_fix').removeClass("fixed");
+
+                }
+            });
+
+
+        });
         var show = true;
         var countbox = ".benefits__inner";
         $(window).on("scroll load resize", function () {
             if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-            var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+            var w_top = $(window).scrollTop() + $(window).height(); // Количество пикселей на которое была прокручена страница
             var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
             var w_height = $(window).height(); // Высота окна браузера
             var d_height = $(document).height(); // Высота всего документа
             var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-            if (w_top + 1000 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+            if (w_top + 2000 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
                 $('.benefits__number').css('opacity', '1');
                 $('.benefits__number').spincrement({
                     thousandSeparator: "",
-                    duration: 1200
+                    duration: 10000
 
                 });
 
                 show = false;
-                setTimeout(ovalIconInit1(), 2000);
+                setTimeout(ovalIconInit1(), 20000);
             }
         });
 

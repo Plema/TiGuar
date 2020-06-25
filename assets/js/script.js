@@ -135,14 +135,14 @@ $(document).ready(function(){
 
 
 
-    $(".lang_filter .filter-open").on("click",function(){
-        $(this).next().addClass("active")
+    $(".lang_filter .filter-open_lang").on("click",function(){
+        $(this).next().addClass("fix")
     });
-    $(".lang_filter #pp_offers_list li").on("click",function(){
-        $("#pp_offers_list li").removeClass("active"),
-            $(this).addClass("active"),
-            $(this).parent("#pp_offers_list").removeClass("active"),
-            $(".filter-open").find("span b").text($(this).find("a").text())
+    $(".lang_filter #pp_offers_list_3 li").on("click",function(){
+        $("#pp_offers_list_3 li").removeClass("fix"),
+            $(this).addClass("fix"),
+            $(this).parent("#pp_offers_list_3").removeClass("fix"),
+            $(".filter-open_lang").find("span b").text($(this).find("a").text())
     });
 
     $(".map_filter .tab-button a").click(function(e) {
@@ -167,29 +167,31 @@ $(document).ready(function(){
             $(this).parent("#pp_offers_list_1").removeClass("activ"),
             $(".filter-open").find("span b").text($(this).find("a").text())
     });
-    $(document).ready(function() {
 
-        var element = $(".leng_fix");
-        var height_el = element.offset().top;
-        $(window).scroll(function() {
-
-            if($(window).scrollTop() > height_el) {
-
-                element.addClass("fixed");
-
-            } else {
-
-                element.removeClass("fixed");
-
-            }
-
-        });
-
-    });
 });
+$(document).ready(function(){
+    var $element = $('.section_3 ');
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop() + $(window).height();
+        //Если скролл до конца елемента
+        //var offset = $element.offset().top + $element.height();
+        //Если скролл до начала елемента
+        var offset = $element.offset().top
 
+        if (scroll > offset) {
+            $('.leng_fix').addClass("fixed");
+
+        }
+        else {
+
+            $('.leng_fix').removeClass("fixed");
+
+        }
+    });
+
+
+});
 var Placemark = {};
-
 ymaps.ready(function() {
     console.log('2');
     var myMap = new ymaps.Map('myMap', {
@@ -217,16 +219,36 @@ ymaps.ready(function() {
                 id: 1,
                 // Размеры метки.
                 iconImageSize: [55, 69],
+
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
                 iconImageOffset: [-80, -254]
             }));
 
     }); //each
+    $('.main-addresses__item_4').each(function() {
+        var obj_1 = $('.main-addresses__item_4').attr("data-coord");
+        obj_1 = JSON.parse(obj_1); //преобразовываем в объект
+        //console.log(obj); //тоже самое, но уже не строка, а объект
 
+        myMap.geoObjects
+            .add(new ymaps.Placemark(obj_1, { //тут была неправильная ")" и "[obj]"
+            }, {
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: '/wp-content/themes/tiguar/img/logo.png',
+                id: 1,
+                // Размеры метки.
+                iconImageSize: [209, 45],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-80, -254]
+            }));
+
+    }); //each
 });
-var Placemark = {};
 
+var Placemark = {};
 ymaps.ready(function() {
     console.log('2');
     var myMap2 = new ymaps.Map('myMap2', {
@@ -261,8 +283,8 @@ ymaps.ready(function() {
     }); //each
 
 });
-var Placemark = {};
 
+var Placemark = {};
 ymaps.ready(function() {
     console.log('2');
     var myMap3 = new ymaps.Map('myMap3', {
