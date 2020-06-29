@@ -1,6 +1,6 @@
 .footer{
   position: relative;
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
   &:before{
     content: '';
     background-color: #f7f7f7;
@@ -76,7 +76,7 @@
        .nav{
          display: flex;
          justify-content: space-between;
-         padding: 17px 55px 40px 40px;
+         padding: 17px 55px 17px 40px;
          .soc{
            display: flex;
            justify-content: space-between;
@@ -154,7 +154,7 @@
          font-weight: 400;
          line-height: 37px;
          text-align: center;
-         margin: 25px auto 0;
+         margin: 10px auto 0;
        }
      }
      .right_box{

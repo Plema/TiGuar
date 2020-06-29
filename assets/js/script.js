@@ -9,6 +9,25 @@ $(document).ready(function(){
         $('.mobile').toggleClass('fix', $(this).scrollTop() > 0);
     });
     $(function() {
+
+        var element = $("#anchor2");
+        var height_el = element.offset().top;
+        $(window).scroll(function() {
+
+            if($(window).scrollTop() > height_el) {
+
+                $('.leng_fix').addClass("fixed");
+
+            } else {
+
+                $('.leng_fix').removeClass("fixed");
+
+            }
+
+        });
+
+    });
+    $(function() {
         jcf.replaceAll();
 
 
@@ -174,28 +193,7 @@ $(document).ready(function(){
     });
 
 });
-$(document).ready(function(){
-    var $element = $('.section_3 ');
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop() + $(window).height();
-        //Если скролл до конца елемента
-        //var offset = $element.offset().top + $element.height();
-        //Если скролл до начала елемента
-        var offset = $element.offset().top
 
-        if (scroll > offset) {
-            $('.leng_fix').addClass("fixed");
-
-        }
-        else {
-
-            $('.leng_fix').removeClass("fixed");
-
-        }
-    });
-
-
-});
 var Placemark = {};
 ymaps.ready(function() {
     console.log('2');

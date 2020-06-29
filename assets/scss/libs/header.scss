@@ -45,37 +45,55 @@ header{
          margin: 0 0 0 161px;
          li{
            a{
-             width: 29px;
              height: 29px;
+             width: 30px;
              display: block;
              text-align: center;
              margin: 2px 5px 0 5px;
              position: relative;
-             i{
-               background-color: #db1515;
-               cursor: pointer;
-               border-radius: 50%;
-               -o-border-radius:50%;
-               -moz-border-radius:50%;
-               -webkit-border-radius:50%;
-               width: 29px;
-               height: 29px;
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%,-50%);
-               text-align: center;
-               &:before{
-                 font-size: 12px;
-                 color: #fff;
-                 line-height: 29px;
-               }
-               &.icon-social{
-                 &:before{
-                   transform: translate(1.5px, 0.5px);
+             cursor: pointer;
+             transition: 0.5s;
+             &:hover{
+               span{
+                 background-color: #ffffff;
+                 i{
+
+                   &:before{
+                     color:  #db1515;
+                     transition: 0.5s;
+                   }
                  }
                }
              }
+            span{
+              left: 0;
+              top:0;
+              cursor: pointer;
+              line-height: 30px;
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              text-align: center;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              background-color: #db1515;
+              -o-border-radius: 50%;
+              i{
+
+                &:before{
+                  font-size: 14px;
+                  color: #fff;
+                }
+                &.icon-social{
+                  //&:before{
+                  //  transform: translate(1px, 0px);
+                  //}
+                }
+
+              }
+            }
+
            }
          }
        }
@@ -163,7 +181,7 @@ header{
     .dasctop_banner{
     display: none;
   }
-  .dasctop{
+   .dasctop{
     display: none;
   }
 
@@ -240,37 +258,41 @@ header{
               cursor: pointer;
               transition: 0.5s;
               &:hover{
-                i{
-                  &:before{
-                    color:  #db1515;
-                    transition: 0.5s;
-                  }
-                }
+               span{
+                 background-color: #ffffff;
+                 i{
+                   &:before{
+                     color:  #db1515;
+                     transition: 0.5s;
+                   }
+                 }
+               }
               }
               &.phone{
-                padding: 7px 0px 0 35px;
+                padding: 8px 0px 0 35px;
                 letter-spacing: 0.6px;
                 margin: 0 0px 0 0;
-              }
-              .icon-communications{
-                background-color: #ffffff;
-                transition: 0.5s;
                 &:hover{
-                  background-color: #db1515;
-                  transition: 0.5s;
-                  &:before{
-                    color: #ffffff;
+                  span{
+                    background-color: #db1515;
+                    i{
+                      &:before{
+                        color: #ffffff;
+                      }
+                    }
                   }
                 }
-                &:before{
-                  color: #db1515;
+                span{
+                  background-color: #ffffff;
                 }
+
               }
-              i{
+              span{
                 position: absolute;
                 left: 0;
-                width: 29px;
-                height: 29px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
                 background-color: #db1515;
                 border-radius: 50%;
                 -o-border-radius:50%;
@@ -279,22 +301,17 @@ header{
                 cursor: pointer;
                 text-align: center;
                 top: -5px;
-                transition: 0.5s;
-                &:before{
-                  color: #ffffff;
-                  font-size: 15px;
-                  line-height: 29px;
-                }
-                &.icon-social{
+                i{
                   &:before{
-                    transform: translate(1px, 0px);
+                    color: #ffffff;
+                    font-size: 15px;
+
                   }
                 }
-                &:hover{
-                  background-color: #ffffff;
-                    &:before{
-                      color:  #db1515;
-                      transition: 0.5s;
+                .icon-communications{
+
+                  &:before{
+                    color: #db1515;
                   }
                 }
               }
@@ -361,35 +378,13 @@ header{
               margin: 0 24px 0 0;
               color: #fff;
               &.phone{
-                padding: 7px 0px 0 49px;
+                padding: 8px 0px 0 49px;
                 letter-spacing: 0.6px;
                 margin: 0 0px 0 0;
               }
-              .icon-communications{
-                background-color: #ffffff;
-                &:before{
-                  color: #db1515;
-                }
-              }
-              i{
-                position: absolute;
-                left: 0;
-                width: 29px;
-                height: 29px;
-                background-color: #db1515;
-                border-radius: 50%;
-                -o-border-radius:50%;
-                -moz-border-radius:50%;
-                -webkit-border-radius:50%;
-                cursor: pointer;
-                text-align: center;
-                top: -5px;
-                &:before{
-                  color: #ffffff;
-                  font-size: 15px;
-                  line-height: 29px;
-                }
-              }
+
+
+
             }
           }
         }

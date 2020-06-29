@@ -1,5 +1,5 @@
 .section_1{
-  padding: 34px 0 140px 0;
+  padding: 34px 0 30px 0;
 
   .container{
     overflow: hidden;
@@ -7,11 +7,12 @@
     .button_slide{
       position: absolute;
       bottom: -5px;
-      left: 0;
+      left: 50%;
       width: 290px;
+      padding: 0 10px;
       display: flex;
       justify-content: space-between;
-      transform: translate(0px, 0px)rotate(0deg);
+      transform: translate(-50%, 0px)rotate(0deg);
       z-index: 2;
       button{
         width: 50px;
@@ -19,7 +20,7 @@
         background-color: #f6f6f6;
         &.prew{
           right: 0;
-          transform: translate(11px,0px) rotate(180deg);
+          transform: translate(-11px,0px) rotate(180deg);
           top: 0;
           left: auto;
           i{
